@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SmartHousing.API.Shared;
+using SmartHousing.API.v1.Services;
 using SmartHousing.Options;
 
 namespace smart_housing_aspnet
@@ -31,7 +32,14 @@ namespace smart_housing_aspnet
     public void ConfigureServices(IServiceCollection services)
     {
       this.AddOptions(services);
+
+      services.AddScoped<IWaterService, WaterService>();
+      services.AddScoped<IElectricityService, ElectricityService>();
+
+
       services.AddAutoMapper();
+
+
 
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
     }
