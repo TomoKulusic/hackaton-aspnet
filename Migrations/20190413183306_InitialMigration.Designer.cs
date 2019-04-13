@@ -10,7 +10,7 @@ using SmartHousing.API.Database.Context;
 namespace smart_housing_aspnet.Migrations
 {
     [DbContext(typeof(SmartHousingContext))]
-    [Migration("20190413161749_InitialMigration")]
+    [Migration("20190413183306_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -224,11 +224,11 @@ namespace smart_housing_aspnet.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("ElectricityTariffEnum");
+
                     b.Property<double?>("HighTarrif");
 
                     b.Property<double?>("LowTarrif");
-
-                    b.Property<string>("Name");
 
                     b.Property<double?>("OneTarrif");
 
@@ -242,30 +242,30 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Plavi",
+                            ElectricityTariffEnum = 1,
                             OneTarrif = 0.22,
                             SupplyFee = 10.0
                         },
                         new
                         {
                             Id = 2,
+                            ElectricityTariffEnum = 2,
                             HighTarrif = 0.12,
                             LowTarrif = 0.23999999999999999,
-                            Name = "Bijeli",
                             SupplyFee = 10.0
                         },
                         new
                         {
                             Id = 3,
+                            ElectricityTariffEnum = 3,
                             HighTarrif = 0.080000000000000002,
                             LowTarrif = 0.16,
-                            Name = "Crveni",
                             SupplyFee = 41.299999999999997
                         },
                         new
                         {
                             Id = 4,
-                            Name = "Crni",
+                            ElectricityTariffEnum = 4,
                             OneTarrif = 0.13,
                             SupplyFee = 5.7999999999999998
                         });
@@ -981,9 +981,9 @@ namespace smart_housing_aspnet.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Name");
-
                     b.Property<double>("Tariff");
+
+                    b.Property<int>("WaterTariffEnum");
 
                     b.HasKey("Id");
 
@@ -993,14 +993,14 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Stambeni",
-                            Tariff = 11.949999999999999
+                            Tariff = 11.949999999999999,
+                            WaterTariffEnum = 1
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Poslovni",
-                            Tariff = 20.93
+                            Tariff = 20.93,
+                            WaterTariffEnum = 2
                         });
                 });
 

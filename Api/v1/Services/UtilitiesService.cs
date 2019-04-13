@@ -27,6 +27,8 @@ namespace SmartHousing.API.v1.Services
     IActionResult GetWaterUtilities();
     IActionResult GetElectricityUtilities();
 
+    IActionResult GenerateWaterUtility(Water water);
+    IActionResult GenerateElectricityUtility(Electricity electricity);
 
 
   }
@@ -35,11 +37,50 @@ namespace SmartHousing.API.v1.Services
   {
     private readonly SmartHousingContext _context;
     private readonly IMapper _mapper;
+    private readonly AmountCalculator _amountCalculator;
 
-    public UtilitesService(SmartHousingContext context, IMapper mapper)
+
+    public UtilitesService(SmartHousingContext context, IMapper mapper, AmountCalculator amountCalculator)
     {
       this._context = context;
       this._mapper = mapper;
+      this._amountCalculator = amountCalculator;
+    }
+
+    public IActionResult GenerateElectricityUtility(Electricity electricity)
+    {
+      using (var trasnaction = _context.Database.BeginTransaction())
+      {
+        var utility = new Utility
+        {
+          ElectricityId = electricity.Id,
+          Date = DateTime.Now,
+          Amount = this._amountCalculator.getElectricityTariff(electricity.TarriffId, electricity.Amount),
+          UtilityType = UtilityType.Electricity
+        };
+        this._context.Utilities.Add(utility);
+        this._context.SaveChanges();
+        trasnaction.Commit();
+        return new OkObjectResult(utility);
+      }
+    }
+
+    public IActionResult GenerateWaterUtility(Water water)
+    {
+      using (var trasnaction = _context.Database.BeginTransaction())
+      {
+        var utility = new Utility
+        {
+          WaterId = water.Id,
+          Date = DateTime.Now,
+          Amount = this._amountCalculator.getWaterTariff(water.TarriffId, water.Amount),
+          UtilityType = UtilityType.Water
+        };
+        this._context.Utilities.Add(utility);
+        this._context.SaveChanges();
+        trasnaction.Commit();
+        return new OkObjectResult(utility);
+      }
     }
 
     public IActionResult GetElectricityUtilities()
@@ -89,5 +130,7 @@ namespace SmartHousing.API.v1.Services
 
       return new OkObjectResult(paginatedResponse);
     }
+
+
   }
 }

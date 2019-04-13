@@ -28,7 +28,7 @@ namespace smart_housing_aspnet.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true),
+                    ElectricityTariffEnum = table.Column<int>(nullable: false),
                     OneTarrif = table.Column<double>(nullable: true),
                     HighTarrif = table.Column<double>(nullable: true),
                     LowTarrif = table.Column<double>(nullable: true),
@@ -59,7 +59,7 @@ namespace smart_housing_aspnet.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true),
+                    WaterTariffEnum = table.Column<int>(nullable: false),
                     Tariff = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
@@ -135,13 +135,13 @@ namespace smart_housing_aspnet.Migrations
 
             migrationBuilder.InsertData(
                 table: "ElectricityTariff",
-                columns: new[] { "Id", "HighTarrif", "LowTarrif", "Name", "OneTarrif", "SupplyFee" },
+                columns: new[] { "Id", "ElectricityTariffEnum", "HighTarrif", "LowTarrif", "OneTarrif", "SupplyFee" },
                 values: new object[,]
                 {
-                    { 4, null, null, "Crni", 0.13, 5.7999999999999998 },
-                    { 3, 0.080000000000000002, 0.16, "Crveni", null, 41.299999999999997 },
-                    { 1, null, null, "Plavi", 0.22, 10.0 },
-                    { 2, 0.12, 0.23999999999999999, "Bijeli", null, 10.0 }
+                    { 4, 4, null, null, 0.13, 5.7999999999999998 },
+                    { 3, 3, 0.080000000000000002, 0.16, null, 41.299999999999997 },
+                    { 1, 1, null, null, 0.22, 10.0 },
+                    { 2, 2, 0.12, 0.23999999999999999, null, 10.0 }
                 });
 
             migrationBuilder.InsertData(
@@ -183,11 +183,11 @@ namespace smart_housing_aspnet.Migrations
 
             migrationBuilder.InsertData(
                 table: "WaterTariff",
-                columns: new[] { "Id", "Name", "Tariff" },
+                columns: new[] { "Id", "Tariff", "WaterTariffEnum" },
                 values: new object[,]
                 {
-                    { 1, "Stambeni", 11.949999999999999 },
-                    { 2, "Poslovni", 20.93 }
+                    { 1, 11.949999999999999, 1 },
+                    { 2, 20.93, 2 }
                 });
 
             migrationBuilder.InsertData(

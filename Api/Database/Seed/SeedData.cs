@@ -77,16 +77,16 @@ namespace SmartHousing.API.Database.Seed
 
     public static List<ElectricityTariff> ElectricityTariff = new List<ElectricityTariff>()
     {
-      new ElectricityTariff { Id = 1,Name = "Plavi", OneTarrif = 0.22, LowTarrif = null, HighTarrif = null, SupplyFee = 10.00 },
-      new ElectricityTariff { Id = 2,Name = "Bijeli", OneTarrif = null, LowTarrif = 0.24, HighTarrif = 0.12, SupplyFee = 10.00 },
-      new ElectricityTariff { Id = 3,Name = "Crveni", OneTarrif = null, LowTarrif = 0.16, HighTarrif = 0.08, SupplyFee = 41.30 },
-      new ElectricityTariff { Id = 4,Name = "Crni", OneTarrif = 0.13, LowTarrif = null, HighTarrif = null, SupplyFee = 5.80 }
+      new ElectricityTariff { Id = 1,ElectricityTariffEnum = ElectricityTariffEnum.Blue, OneTarrif = 0.22, LowTarrif = null, HighTarrif = null, SupplyFee = 10.00 },
+      new ElectricityTariff { Id = 2,ElectricityTariffEnum = ElectricityTariffEnum.White, OneTarrif = null, LowTarrif = 0.24, HighTarrif = 0.12, SupplyFee = 10.00 },
+      new ElectricityTariff { Id = 3,ElectricityTariffEnum = ElectricityTariffEnum.Red, OneTarrif = null, LowTarrif = 0.16, HighTarrif = 0.08, SupplyFee = 41.30 },
+      new ElectricityTariff { Id = 4,ElectricityTariffEnum = ElectricityTariffEnum.Crni, OneTarrif = 0.13, LowTarrif = null, HighTarrif = null, SupplyFee = 5.80 }
     };
 
     public static List<WaterTariff> WaterTariff = new List<WaterTariff>()
     {
-      new WaterTariff { Id = 1, Name = "Stambeni", Tariff = 11.95 },
-      new WaterTariff { Id = 2, Name = "Poslovni", Tariff = 20.93 }
+      new WaterTariff { Id = 1, WaterTariffEnum = WaterTariffEnum.Stambeni, Tariff = 11.95 },
+      new WaterTariff { Id = 2, WaterTariffEnum = WaterTariffEnum.Poslovni, Tariff = 20.93 }
     };
 
     public static List<Water> Water = new List<Water>

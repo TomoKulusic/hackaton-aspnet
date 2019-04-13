@@ -12,16 +12,18 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
 
+
 using Proteron.HumanitarianAid.DAL;
 
 using AutoMapper;
 using SmartHousing.API.Database.Context;
+using SmartHousing.API.Database.Models;
 
 namespace SmartHousing.API.v1.Services
 {
   public interface IElectricityService
   {
-    IActionResult Get();
+    API.Bal.Models.Electricity Post(API.Database.Models.Electricity electricity);
   }
 
   public class ElectricityService : IElectricityService
@@ -35,12 +37,16 @@ namespace SmartHousing.API.v1.Services
       _mapper = mapper;
     }
 
-    public IActionResult Get()
+    public API.Bal.Models.Electricity Post(Electricity electricity)
     {
-      return null;
+      using (var trasnaction = _context.Database.BeginTransaction())
+      {
+        var newElectricity = this._mapper.Map<API.Bal.Models.Electricity>(electricity);
+        this._context.Electricity.Add(newElectricity);
+        this._context.SaveChanges();
+        trasnaction.Commit();
+        return newElectricity;
+      }
     }
-
-
-
   }
 }

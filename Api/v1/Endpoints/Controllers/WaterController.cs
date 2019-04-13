@@ -3,43 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SmartHousing.API.Database.Models;
+using SmartHousing.API.v1.Services;
 
 namespace SmartHousing.API.v1.Endpoints.Controllers
 {
-    [Route("api/v1/[controller]")]
-    [ApiController]
-    public class WaterController : ControllerBase
+  [Route("api/v1/[controller]")]
+  public class WaterController : ControllerBase
+  {
+    private readonly IWaterService _waterService;
+    private readonly IUtilitesService _utilityService;
+
+
+    public WaterController(IWaterService waterService, IUtilitesService utilityService)
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+      this._waterService = waterService;
+      this._utilityService = utilityService;
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
+
+    // GET api/values
+    [HttpPost]
+    [HttpPost]
+    public IActionResult Post([FromBody]Water water)
+    {
+      var newUtility = _waterService.Post(water);
+      return this._utilityService.GenerateWaterUtility((API.Bal.Models.Water)newUtility);
+    }
+
+  }
 }
