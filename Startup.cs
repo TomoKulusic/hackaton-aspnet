@@ -12,8 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SmartHousing.API.Shared;
-using SmartHousing.API.v1.Services;
 using SmartHousing.Options;
+using SmartHousing.API.v1.Services;
 
 namespace smart_housing_aspnet
 {
