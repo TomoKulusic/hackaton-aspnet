@@ -10,7 +10,7 @@ using SmartHousing.API.Database.Context;
 namespace smart_housing_aspnet.Migrations
 {
     [DbContext(typeof(SmartHousingContext))]
-    [Migration("20190413212630_InitialMigration")]
+    [Migration("20190413230225_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -445,79 +445,85 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0c43230a-96de-4eae-a6a0-385dc98543a8",
+                            ConcurrencyStamp = "768c32eb-a62d-4904-adc5-386bae7d2b34",
                             Email = "tomokulusic@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEAkdXLhM7X01Z3xSKUwgWjMn4pynb63xcT/zH+vNXyrCOyoScZbn0cTGIDgE+pZ+TA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEP8deUPtmew8qs9TwtnyMwHgW/4peERufLRjugH6GTaKgdJeLpgkHdQ9vQwLsY1LWw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "d793f948-75b0-4b44-a558-a3fc73538c54",
+                            TwoFactorEnabled = false,
+                            UserName = "tomokulusic"
                         },
                         new
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "50f1ebea-6136-4ac1-a633-b6a75f463a25",
+                            ConcurrencyStamp = "87cbe059-1e62-4721-9f47-83f82640124b",
                             Email = "petar.kleskovic@enum.hr",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAELZKVPAYqkFfP8rmJWtjldNSV+iw92JPqdl1AnuqAmq03D8WhahfVRHc6ebQbL2m2g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELmSLQ37IvA7NqzPNzklUxJMUnabxNXx5h6Ixm79Tqn/lzYwwBWwlPpHdM7jCm2tMQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "d793f948-75b0-4b44-a558-a3fc73538c54",
+                            TwoFactorEnabled = false,
+                            UserName = "petar.kleskovic"
                         },
                         new
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cf3d6459-0c11-4d05-ba01-67c465146469",
+                            ConcurrencyStamp = "179a89ad-2a7f-4ba9-a592-81275bbd6a89",
                             Email = "kxl9597@g.rit.edu",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEN6HDL9wjKl5YxDGLAU2K0iIgPhlNRr/oltOSklg9FiyJLyatuWH//8p+XubQUpnKg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEO9W+I+hNz1bX0a3xetlYvDfyHqpVvYZCg4wrfeyRxUIT8F6ODko8cETtjKv2HaqTw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "d793f948-75b0-4b44-a558-a3fc73538c54",
+                            TwoFactorEnabled = false,
+                            UserName = "kxl9597"
                         },
                         new
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0b73c692-5c7c-4442-8c69-124f937384ce",
+                            ConcurrencyStamp = "c88914ce-fa24-4430-8904-365254d0fa82",
                             Email = "stipe.brzi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEJQ8sz4UTte/1rAHGPrbLRBTrvcxPkCGU8zcyk1/H/O164R3FYceIg+th7z0nuApfg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDCJ8vQG2QrNYlZq7uSvOCGEpz/OBcwnWOgUAscKzNLLdnk3qhnaohizZT/BjuhO9Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "d793f948-75b0-4b44-a558-a3fc73538c54",
+                            TwoFactorEnabled = false,
+                            UserName = "stipe.brzi"
                         },
                         new
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e81dccb7-afaa-40f0-8d4a-09e184107b4a",
+                            ConcurrencyStamp = "2021dd5d-a2fc-47c6-a92b-eeb23583f857",
                             Email = "frano.nola@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEMRWuApGfXhZ4yRdaV/7et4ehUB4vwUINS8tTUCYR7PYJP9FFLBMGo2hsD1l0InYaw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELSV9pDq+4fzPCh/kikgRgonsGb2AJaAK6Jz4PaF1INVw4BCLD/22nJ8I6m8XJgr0Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "d793f948-75b0-4b44-a558-a3fc73538c54",
+                            TwoFactorEnabled = false,
+                            UserName = "frano.nola"
                         },
                         new
                         {
                             Id = 6,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7fc618c7-ea02-4df7-9ff3-9b1907632a67",
+                            ConcurrencyStamp = "6a023b8a-4ea4-427f-9de4-ffedbd50558f",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEF2cCQ0+9YI1CZsVfCH+QIP2rmvYWK5yeASRaa+qiYxNRrR4ASgMNERQ9r2BClRw2g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDuQsdnZDuhRXyvVz6V9XYtN3yHHII0QXv3xBIteq33o2+lPWChLMl+YeA72MbN+og==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "d793f948-75b0-4b44-a558-a3fc73538c54",
+                            TwoFactorEnabled = false,
+                            UserName = "user"
                         });
                 });
 
@@ -1264,14 +1270,14 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            ConcurrencyStamp = "d793f948-75b0-4b44-a558-a3fc73538c54",
                             Name = "User",
                             NormalizedName = "user"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            ConcurrencyStamp = "d793f948-75b0-4b44-a558-a3fc73538c54",
                             Name = "Admin",
                             NormalizedName = "admin"
                         });
