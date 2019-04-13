@@ -269,7 +269,7 @@ namespace smart_housing_aspnet.Migrations
                         });
                 });
 
-            modelBuilder.Entity("SmartHousing.API.Bal.Models.Utilities", b =>
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.Utility", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -539,7 +539,7 @@ namespace smart_housing_aspnet.Migrations
                             Id = 31,
                             Amount = 78.909999999999997,
                             Date = new DateTime(2019, 4, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            UtilityType = 2,
+                            UtilityType = 1,
                             WaterId = 1
                         },
                         new
@@ -765,6 +765,14 @@ namespace smart_housing_aspnet.Migrations
                             Date = new DateTime(2019, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UtilityType = 1,
                             WaterId = 29
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Amount = 111.20999999999999,
+                            Date = new DateTime(2019, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UtilityType = 1,
+                            WaterId = 30
                         });
                 });
 
@@ -994,7 +1002,7 @@ namespace smart_housing_aspnet.Migrations
                         });
                 });
 
-            modelBuilder.Entity("SmartHousing.API.Bal.Models.Utilities", b =>
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.Utility", b =>
                 {
                     b.HasOne("SmartHousing.API.Bal.Models.Electricity", "Electricity")
                         .WithMany()

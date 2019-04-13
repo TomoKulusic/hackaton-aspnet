@@ -11,8 +11,9 @@ namespace SmartHousing.API.Database.Context
 {
   public class SmartHousingContext : DbContext
   {
-    public DbSet<Utilities> Utilities { get; set; }
+    public DbSet<Utility> Utilities { get; set; }
     public DbSet<Water> Water { get; set; }
+
     public DbSet<Electricity> Electricity { get; set; }
     public DbSet<ElectricityTariff> ElectricityTariff { get; set; }
     public DbSet<WaterTariff> WaterTariff { get; set; }
@@ -23,12 +24,14 @@ namespace SmartHousing.API.Database.Context
       base.OnModelCreating(builder);
 
 
+
       //builder.Entity<Role>().HasData(SeedData.Roles);       reference blyat
       builder.Entity<ElectricityTariff>().HasData(SeedData.ElectricityTariff);
       builder.Entity<WaterTariff>().HasData(SeedData.WaterTariff);
       builder.Entity<Electricity>().HasData(SeedData.Electricity);
       builder.Entity<Water>().HasData(SeedData.Water);
-      builder.Entity<Utilities>().HasData(SeedData.Utilities);
+
+      builder.Entity<Utility>().HasData(SeedData.Utilities);
     }
 
   }

@@ -14,6 +14,8 @@ using Microsoft.Extensions.Options;
 using SmartHousing.API.Shared;
 using SmartHousing.Options;
 using SmartHousing.API.v1.Services;
+using SmartHousing.API.Database.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace SmartHousing
 {
@@ -33,13 +35,17 @@ namespace SmartHousing
     {
       this.AddOptions(services);
 
+      services.AddDbContext<SmartHousingContext>(options =>
+      {
+        options.UseSqlServer(this._connectionStrings.DatabaseConnection);
+      });
+
       services.AddScoped<IWaterService, WaterService>();
       services.AddScoped<IElectricityService, ElectricityService>();
+      services.AddScoped<IUtilitesService, UtilitesService>();
 
 
       services.AddAutoMapper();
-
-
 
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
     }
@@ -47,20 +53,20 @@ namespace SmartHousing
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     {
-      if (env.IsDevelopment())
-      {
-        app.UseDeveloperExceptionPage();
-      }
-      else
-      {
-        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-      }
-
-      app.UseDefaultFiles();
-      app.UseStaticFiles();
+      // if (env.IsDevelopment())
+      // {
+      //   app.UseDeveloperExceptionPage();
+      // }
+      // else
+      // {
+      // }
 
       app.UseMvc();
-      app.UseSpa(m => m.Options.DefaultPage = "/index.html");
+
+      // app.UseDefaultFiles();
+      // app.UseStaticFiles();
+      // app.UseSpa(m => m.Options.DefaultPage = "/index.html");
+
     }
 
     public void AddOptions(IServiceCollection services)
