@@ -1,5 +1,5 @@
 using System;
-using SmartHousing.API.Bal.Models.Enums;
+using SmartHousing.API.Bal.Models;
 
 namespace SmartHousing.API.Bal.Models
 {

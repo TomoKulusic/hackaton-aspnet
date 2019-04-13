@@ -1,10 +1,10 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using SmartHousing.API.Bal.Models.Enums;
+using SmartHousing.API.Bal.Models;
 
 namespace SmartHousing.API.Bal.Models
 {
-  public class Utilities
+  public class Utility
   {
     [Key]
     public int Id { get; set; }

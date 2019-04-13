@@ -1,6 +1,6 @@
 using System;
 
-namespace SmartHousing.API.Bal.Models.Enums
+namespace SmartHousing.API.Bal.Models
 {
   public enum UtilityType 
   {

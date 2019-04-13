@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace smart_housing_aspnet.Controllers
+namespace SmartHousing.API.v1.Endpoints.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class WaterController : ControllerBase
     {
