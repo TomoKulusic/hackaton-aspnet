@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,8 @@ namespace smart_housing_aspnet
     public void ConfigureServices(IServiceCollection services)
     {
       this.AddOptions(services);
+      services.AddAutoMapper();
+
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
     }
 
@@ -47,6 +50,7 @@ namespace smart_housing_aspnet
 
       app.UseDefaultFiles();
       app.UseStaticFiles();
+
       app.UseMvc();
       app.UseSpa(m => m.Options.DefaultPage = "/index.html");
     }

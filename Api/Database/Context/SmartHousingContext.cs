@@ -11,7 +11,17 @@ namespace SmartHousing.API.Database.Context
   public class SmartHousingContext : DbContext
   {
     public DbSet<Utilities> Utilities { get; set; }
+    public DbSet<Water> Water { get; set; }
+    public DbSet<Electricity> Electricity { get; set; }
     public SmartHousingContext(DbContextOptions<SmartHousingContext> options) : base(options) { }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+      base.OnModelCreating(builder);
+
+
+
+    }
 
   }
 }
