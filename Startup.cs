@@ -78,6 +78,12 @@ namespace SmartHousing
       // else
       // {
       // }
+
+      app.UseCors(config => config
+         .AllowAnyHeader()
+         .AllowAnyMethod()
+         .AllowAnyOrigin());
+
       app.UseAuthentication();
       app.UseMvc();
 
