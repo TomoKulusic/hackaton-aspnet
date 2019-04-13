@@ -3,12 +3,10 @@ using SmartHousing.API.Bal.Models.Enums;
 
 namespace SmartHousing.API.Bal.Models
 {
-  public class Water
+  public class WaterTariff
   {
     public int Id { get; set; }
-    public double Amount { get; set; }
-    public int TarriffId { get; set; }
-
-
+    public string  Name { get; set; }
+    public double Tariff { get; set; }
   }
 }

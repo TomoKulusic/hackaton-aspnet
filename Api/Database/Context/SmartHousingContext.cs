@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SmartHousing.API.Bal.Models;
+using SmartHousing.API.Database.Seed;
 
 namespace SmartHousing.API.Database.Context
 {
@@ -13,6 +14,8 @@ namespace SmartHousing.API.Database.Context
     public DbSet<Utilities> Utilities { get; set; }
     public DbSet<Water> Water { get; set; }
     public DbSet<Electricity> Electricity { get; set; }
+    public DbSet<ElectricityTariff> ElectricityTariff { get; set; }
+    public DbSet<WaterTariff> WaterTariff { get; set; }
     public SmartHousingContext(DbContextOptions<SmartHousingContext> options) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder builder)
@@ -20,7 +23,8 @@ namespace SmartHousing.API.Database.Context
       base.OnModelCreating(builder);
 
 
-
+      //builder.Entity<Role>().HasData(SeedData.Roles);       reference blyat
+      builder.Entity<ElectricityTariff>().HasData(SeedData.ElectricityTariff);
     }
 
   }

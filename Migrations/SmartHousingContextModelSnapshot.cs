@@ -19,6 +19,53 @@ namespace smart_housing_aspnet.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.Electricity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<double>("Amount");
+
+                    b.Property<int>("Tarriff_id");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Electricity");
+                });
+
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.ElectricityTariff", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<double>("High_Tarrif");
+
+                    b.Property<double>("Low_Tarrif");
+
+                    b.Property<string>("Name");
+
+                    b.Property<double>("One_Tarrif");
+
+                    b.Property<double>("Supply_Fee");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ElectricityTariff");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            High_Tarrif = 0.0,
+                            Low_Tarrif = 0.0,
+                            Name = "Plavi",
+                            One_Tarrif = 0.22,
+                            Supply_Fee = 10.0
+                        });
+                });
+
             modelBuilder.Entity("SmartHousing.API.Bal.Models.Utilities", b =>
                 {
                     b.Property<int>("Id")
@@ -36,6 +83,36 @@ namespace smart_housing_aspnet.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Utilities");
+                });
+
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.Water", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<double>("Amount");
+
+                    b.Property<int>("Tarriff_id");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Water");
+                });
+
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.WaterTariff", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.Property<double>("Tariff");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("WaterTariff");
                 });
 #pragma warning restore 612, 618
         }

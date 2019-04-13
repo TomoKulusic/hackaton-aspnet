@@ -12,3 +12,17 @@ C:\dev\Skrrrah Industries\smart-housing-aspnet\bin\Debug\netcoreapp2.2\smart-hou
 C:\dev\Skrrrah Industries\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.RazorTargetAssemblyInfo.cache
 C:\dev\Skrrrah Industries\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.dll
 C:\dev\Skrrrah Industries\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.pdb
+D:\skrrrah\develop\smart-housing-aspnet\bin\Debug\netcoreapp2.2\smart-housing-aspnet.deps.json
+D:\skrrrah\develop\smart-housing-aspnet\bin\Debug\netcoreapp2.2\smart-housing-aspnet.runtimeconfig.json
+D:\skrrrah\develop\smart-housing-aspnet\bin\Debug\netcoreapp2.2\smart-housing-aspnet.runtimeconfig.dev.json
+D:\skrrrah\develop\smart-housing-aspnet\bin\Debug\netcoreapp2.2\smart-housing-aspnet.dll
+D:\skrrrah\develop\smart-housing-aspnet\bin\Debug\netcoreapp2.2\smart-housing-aspnet.pdb
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.csprojAssemblyReference.cache
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.csproj.CoreCompileInputs.cache
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.RazorAssemblyInfo.cache
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.RazorAssemblyInfo.cs
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.AssemblyInfoInputs.cache
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.AssemblyInfo.cs
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.RazorTargetAssemblyInfo.cache
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.dll
+D:\skrrrah\develop\smart-housing-aspnet\obj\Debug\netcoreapp2.2\smart-housing-aspnet.pdb

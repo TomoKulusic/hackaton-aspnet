@@ -6,7 +6,7 @@ namespace SmartHousing.API.Bal.Models
   public class Utilities
   {
     public int Id { get; set; }
-    public int Entry_id { get; set; } // foregin key for Water / Electricity Id
+    public int EntryId { get; set; } // foregin key for Water / Electricity Id
 
     public DateTime Date { get; set; }
     public Double Amount { get; set; }
