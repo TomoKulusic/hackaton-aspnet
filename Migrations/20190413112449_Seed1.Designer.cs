@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SmartHousing.API.Database.Context;
 
 namespace smart_housing_aspnet.Migrations
 {
     [DbContext(typeof(SmartHousingContext))]
-    partial class SmartHousingContextModelSnapshot : ModelSnapshot
+    [Migration("20190413112449_Seed1")]
+    partial class Seed1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
