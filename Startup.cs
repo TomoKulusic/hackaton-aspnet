@@ -15,7 +15,7 @@ using SmartHousing.API.Shared;
 using SmartHousing.Options;
 using SmartHousing.API.v1.Services;
 
-namespace smart_housing_aspnet
+namespace SmartHousing
 {
   public class Startup
   {
