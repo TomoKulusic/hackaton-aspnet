@@ -25,6 +25,10 @@ namespace SmartHousing.API.Database.Context
 
       //builder.Entity<Role>().HasData(SeedData.Roles);       reference blyat
       builder.Entity<ElectricityTariff>().HasData(SeedData.ElectricityTariff);
+      builder.Entity<WaterTariff>().HasData(SeedData.WaterTariff);
+      builder.Entity<Electricity>().HasData(SeedData.Electricity);
+      builder.Entity<Water>().HasData(SeedData.Water);
+      builder.Entity<Utilities>().HasData(SeedData.Utilities);
     }
 
   }
