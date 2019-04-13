@@ -19,6 +19,124 @@ namespace smart_housing_aspnet.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken();
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired();
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("Role");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityRole<int>");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType");
+
+                    b.Property<string>("ClaimValue");
+
+                    b.Property<int>("RoleId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("RoleClaim");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType");
+
+                    b.Property<string>("ClaimValue");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserClaim");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
+                {
+                    b.Property<string>("LoginProvider");
+
+                    b.Property<string>("ProviderKey");
+
+                    b.Property<string>("ProviderDisplayName");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserLogin");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
+                {
+                    b.Property<int>("UserId");
+
+                    b.Property<int>("RoleId");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired();
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("UserRole");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUserRole<int>");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
+                {
+                    b.Property<int>("UserId");
+
+                    b.Property<string>("LoginProvider");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Value");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("UserToken");
+                });
+
             modelBuilder.Entity("SmartHousing.API.Bal.Models.Electricity", b =>
                 {
                     b.Property<int>("Id")
@@ -266,6 +384,138 @@ namespace smart_housing_aspnet.Migrations
                             ElectricityTariffEnum = 4,
                             OneTarrif = 0.13,
                             SupplyFee = 5.7999999999999998
+                        });
+                });
+
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AccessFailedCount");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken();
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256);
+
+                    b.Property<bool>("EmailConfirmed");
+
+                    b.Property<bool>("LockoutEnabled");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PasswordHash");
+
+                    b.Property<string>("PhoneNumber");
+
+                    b.Property<bool>("PhoneNumberConfirmed");
+
+                    b.Property<string>("SecurityStamp");
+
+                    b.Property<bool>("TwoFactorEnabled");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "0c43230a-96de-4eae-a6a0-385dc98543a8",
+                            Email = "tomokulusic@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAEAACcQAAAAEAkdXLhM7X01Z3xSKUwgWjMn4pynb63xcT/zH+vNXyrCOyoScZbn0cTGIDgE+pZ+TA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            TwoFactorEnabled = false
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "50f1ebea-6136-4ac1-a633-b6a75f463a25",
+                            Email = "petar.kleskovic@enum.hr",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAEAACcQAAAAELZKVPAYqkFfP8rmJWtjldNSV+iw92JPqdl1AnuqAmq03D8WhahfVRHc6ebQbL2m2g==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            TwoFactorEnabled = false
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "cf3d6459-0c11-4d05-ba01-67c465146469",
+                            Email = "kxl9597@g.rit.edu",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAEAACcQAAAAEN6HDL9wjKl5YxDGLAU2K0iIgPhlNRr/oltOSklg9FiyJLyatuWH//8p+XubQUpnKg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            TwoFactorEnabled = false
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "0b73c692-5c7c-4442-8c69-124f937384ce",
+                            Email = "stipe.brzi@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAEAACcQAAAAEJQ8sz4UTte/1rAHGPrbLRBTrvcxPkCGU8zcyk1/H/O164R3FYceIg+th7z0nuApfg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            TwoFactorEnabled = false
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "e81dccb7-afaa-40f0-8d4a-09e184107b4a",
+                            Email = "frano.nola@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAEAACcQAAAAEMRWuApGfXhZ4yRdaV/7et4ehUB4vwUINS8tTUCYR7PYJP9FFLBMGo2hsD1l0InYaw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            TwoFactorEnabled = false
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "7fc618c7-ea02-4df7-9ff3-9b1907632a67",
+                            Email = "user@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAEAACcQAAAAEF2cCQ0+9YI1CZsVfCH+QIP2rmvYWK5yeASRaa+qiYxNRrR4ASgMNERQ9r2BClRw2g==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            TwoFactorEnabled = false
                         });
                 });
 
@@ -1000,6 +1250,121 @@ namespace smart_housing_aspnet.Migrations
                             Tariff = 20.93,
                             WaterTariffEnum = 2
                         });
+                });
+
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.Role", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole<int>");
+
+                    b.HasDiscriminator().HasValue("Role");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcurrencyStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            Name = "User",
+                            NormalizedName = "user"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ConcurrencyStamp = "2b25ff3c-5566-4957-819d-d6babd8fdebc",
+                            Name = "Admin",
+                            NormalizedName = "admin"
+                        });
+                });
+
+            modelBuilder.Entity("SmartHousing.API.Bal.Models.UserRole", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUserRole<int>");
+
+                    b.Property<int>("Id");
+
+                    b.HasDiscriminator().HasValue("UserRole");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            RoleId = 2,
+                            Id = 1
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            RoleId = 2,
+                            Id = 2
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            RoleId = 2,
+                            Id = 3
+                        },
+                        new
+                        {
+                            UserId = 4,
+                            RoleId = 2,
+                            Id = 4
+                        },
+                        new
+                        {
+                            UserId = 5,
+                            RoleId = 2,
+                            Id = 5
+                        },
+                        new
+                        {
+                            UserId = 6,
+                            RoleId = 1,
+                            Id = 6
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<int>")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
+                {
+                    b.HasOne("SmartHousing.API.Bal.Models.User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
+                {
+                    b.HasOne("SmartHousing.API.Bal.Models.User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<int>")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("SmartHousing.API.Bal.Models.User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
+                {
+                    b.HasOne("SmartHousing.API.Bal.Models.User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("SmartHousing.API.Bal.Models.Utility", b =>
