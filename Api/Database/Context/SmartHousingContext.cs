@@ -11,12 +11,7 @@ namespace SmartHousing.API.Database.Context
   {
     // public DbSet<Application> Applications { get; set; }
 
-
-
     public SmartHousingContext(DbContextOptions<SmartHousingContext> options) : base(options) { }
-
-   
-
 
   }
 }
