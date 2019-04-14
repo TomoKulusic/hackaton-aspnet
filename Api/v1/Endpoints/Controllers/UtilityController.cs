@@ -41,13 +41,13 @@ namespace SmartHousing.API.v1.Endpoints.Controllers
         }
 
         [HttpGet("getWaterByMonth")]
-        public IActionResult GetWaterByMonth([FromForm] int month)
+        public IActionResult GetWaterByMonth([FromQuery]int month)
         {
             return this._utilitiesService.GetWaterByMonth(month);
         }
 
         [HttpGet("getElectricityByMonth")]
-        public IActionResult GetElectricityByMonth([FromForm] int month)
+        public IActionResult GetElectricityByMonth([FromQuery]int month)
         {
             return this._utilitiesService.GetElectricityByMonth(month);
         }
