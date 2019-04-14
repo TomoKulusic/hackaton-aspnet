@@ -17,52 +17,29 @@ namespace SmartHousing.API.v1.Endpoints.Controllers
         }
 
         // GET api/values
-        [HttpGet("eForCurrentMonth")]
+        [HttpGet("electricityCurrentMonth")]
         public IActionResult GetUtilitiesForCurrentMonthElectricity()
         {
             return this._utilitiesService.GetUtilitiesForCurrentMonthElectricity();
         }
-        [HttpGet("electricity")]
+        [HttpGet("getAllElectricity")]
         public IActionResult GetElectricityUtilities()
         {
             return this._utilitiesService.GetElectricityUtilities();
         }
 
-        [HttpGet("water")]
+        [HttpGet("getAllWater")]
         public IActionResult GetWaterUtilities()
         {
             return this._utilitiesService.GetWaterUtilities();
         }
 
-        [HttpGet("wForCurrentMonth")]
+        [HttpGet("waterCurrentMonth")]
         public IActionResult GetUtilitiesForCurrentMonthWater()
         {
             return this._utilitiesService.GetUtilitiesForCurrentMonthWater();
         }
 
-        // GET api/values/5
-        // [HttpGet("{id}")]
-        // public ActionResult<string> Get(int id)
-        // {
-        //     return "value";
-        // }
-
-        // // POST api/values
-        // [HttpPost]
-        // public void Post([FromBody] string value)
-        // {
-        // }
-
-        // // PUT api/values/5
-        // [HttpPut("{id}")]
-        // public void Put(int id, [FromBody] string value)
-        // {
-        // }
-
-        // // DELETE api/values/5
-        // [HttpDelete("{id}")]
-        // public void Delete(int id)
-        // {
-        // }
+        
     }
 }

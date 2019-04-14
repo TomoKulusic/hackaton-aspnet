@@ -18,12 +18,13 @@ using Proteron.HumanitarianAid.DAL;
 using AutoMapper;
 using SmartHousing.API.Database.Context;
 using SmartHousing.API.Database.Models;
-
+using APIX = SmartHousing.API.Database.Models;
+using DAL = SmartHousing.API.Bal.Models;
 namespace SmartHousing.API.v1.Services
 {
   public interface IElectricityService
   {
-    API.Bal.Models.Electricity Post(API.Database.Models.Electricity electricity);
+    DAL.Electricity Post(APIX.Electricity electricity);
   }
 
   public class ElectricityService : IElectricityService
@@ -37,11 +38,11 @@ namespace SmartHousing.API.v1.Services
       _mapper = mapper;
     }
 
-    public API.Bal.Models.Electricity Post(Electricity electricity)
+    public DAL.Electricity Post(Electricity electricity)
     {
       using (var trasnaction = _context.Database.BeginTransaction())
       {
-        var newElectricity = this._mapper.Map<API.Bal.Models.Electricity>(electricity);
+        var newElectricity = this._mapper.Map<DAL.Electricity>(electricity);
         this._context.Electricity.Add(newElectricity);
         this._context.SaveChanges();
         trasnaction.Commit();

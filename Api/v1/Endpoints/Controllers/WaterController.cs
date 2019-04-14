@@ -22,7 +22,6 @@ namespace SmartHousing.API.v1.Endpoints.Controllers
 
     }
 
-    // GET api/values
     [HttpPost]
     public IActionResult Post([FromBody]Water water)
     {

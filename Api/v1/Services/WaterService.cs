@@ -16,13 +16,14 @@ using Proteron.HumanitarianAid.DAL;
 
 using AutoMapper;
 using SmartHousing.API.Database.Context;
-using SmartHousing.API.Database.Models;
+using APIX = SmartHousing.API.Database.Models;
+using DAL = SmartHousing.API.Bal.Models;
 
 namespace SmartHousing.API.v1.Services
 {
   public interface IWaterService
   {
-     API.Bal.Models.Water Post(Water water);
+    DAL.Water Post(APIX.Water water);
   }
 
   public class WaterService : IWaterService
@@ -37,11 +38,11 @@ namespace SmartHousing.API.v1.Services
     }
 
 
-    public  API.Bal.Models.Water Post(Water water)
+    public DAL.Water Post(APIX.Water water)
     {
       using (var trasnaction = _context.Database.BeginTransaction())
       {
-        var newWater = this._mapper.Map<API.Bal.Models.Water>(water);
+        var newWater = this._mapper.Map<DAL.Water>(water);
         this._context.Water.Add(newWater);
         this._context.SaveChanges();
         trasnaction.Commit();

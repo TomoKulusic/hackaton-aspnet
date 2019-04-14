@@ -14,6 +14,8 @@ namespace SmartHousing.API.Database.Models
     public Electricity Electricity { get; set; }
     public DateTime Date { get; set; }
     public Double Amount { get; set; }
+    public SmartHouseCityRegion SmartHouseCityRegion { get; set; }
+
     public UtilityType UtilityType { get; set; }
     // public int User_id { get; set; }
   }
