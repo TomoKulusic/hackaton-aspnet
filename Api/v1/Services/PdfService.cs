@@ -71,10 +71,16 @@ namespace SmartHousing.Api.v1.Services
     public IActionResult GetInvoicePdf(int invoiceId)
     {
       var dalInvoice;
-      var dalInvoice = _context.Invoice
-        .Include(m => m.Order)
-        .ThenInclude(m => m.OrderProducts)
-        .FirstOrDefault(m => m.Id == invoiceId);
+
+      var user = _context.User.Where(m => m.Id = 1).FirstOrDefault();
+
+      var newInvoice = new Invoice {
+        Email = user.Email,
+        FirstName = user.FirstName,
+        LastName = user.LastName,
+        Currency = "HRK",
+        InvoicePlaceDate = DateTime.Now
+      };
 
       var invoice = _mapper.Map<VM.Invoice>(dalInvoice);
 

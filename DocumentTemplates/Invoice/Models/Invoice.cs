@@ -9,11 +9,10 @@ namespace SmartHousing.DocumentTemplates.Invoice.Models
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Currency { get; set; }
-    public string InvoicePlaceDate { get; set; }
+    public DateTime InvoicePlaceDate { get; set; }
     public string TaxAmount { get; set; }
-    public string TotalPlusTax { get; set; }
+    public string Total { get; set; }
 
-    public List<Item> Items { get; set; }
   }
 
   public class Item

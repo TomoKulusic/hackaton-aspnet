@@ -137,37 +137,28 @@
     <div class="header margin-bot-1 padding-y-2">
       <div id="company-logo"></div>
       <div id="company-header">
-        <h2>Tabacco d.o.o.</h2>
+        <h2>Skrrrah Industries</h2>
       </div>
     </div>
 
     <div class="parent margin-bot-5">
       <div class="left-half">
         <div>
-          <h1>{{CustomerName}}</h1>
-          <p>
-            {{CustomerAddress}} <br />
-            {{CustomerCityZip}}
-          </p>
+          <h1>{{CustomerName}} </h1>
         </div>
         <div>
           <p>
-            OIB: {{CustomerOib}}
+            E-mail: {{Email}}
           </p>
         </div>
       </div>
 
       <div class="right-half">
-        <h2>Racun br. {{InvoiceNumber}} </h2>
+        <h2>Racun br. 2019-04-347 </h2>
 
         <p>
-          <strong>Mjesto i datum:</strong> {{InvoicePlaceDate}} <br />
-          <strong>Datum isporuke:</strong> {{DeliveryDate}} <br />
+          <strong>Datum:</strong> InvoicePlaceDate <br />
           <strong>Valuta placanja:</strong> {{Currency}} <br />
-          <strong>Po vasoj narudzbi: {{OrderNumber}}</strong>
-        </p>
-        <p>
-          <strong>Dokument isporuke: {{DocumentId}}</strong>
         </p>
       </div>
     </div>
@@ -175,15 +166,11 @@
     <div class="item-table margin-bot-1">
       <table class="full-width">
         <tr class="table-header">
-          <th>#</th>
-          <th>Sifra</th>
-          <th>Naziv</th>
-          <th>JM</th>
-          <th>Količina</th>
-          <th>Cijena</th>
-          <th>Pdv</th>
-          <th>Neto Cijena</th>
-          <th>Neto Iznos</th>
+          <th>Opis</th>
+          <th>Jed. mjere</th>
+          <th>Kolicina</th>
+          <th>Jed. Cijena kn</th>
+          <th>Iznos</th>
         </tr>
         {{#each Items}}
           <tr>
@@ -191,11 +178,6 @@
             <td>{{this.Code}}</td>
             <td>{{this.Name}}</td>
             <td>{{this.Unit}}</td>
-            <td>{{this.Amount}}</td>
-            <td>{{this.Price}}</td>
-            <td>{{this.Tax}}%</td>
-            <td>{{this.Total}}</td>
-            <td>{{this.Total}}</td>
           </tr>
         {{/each}}
         <tr class="border-top">
