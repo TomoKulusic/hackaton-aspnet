@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <title>HTML Preview</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <script src="main.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td, th {
+      padding:0 1em 0 1em;
+      text-align: left;
+    }
+
+    .float-right {
+      float: right;
+    }
+
+    .full-width {
+      width: 100vw;
+    }
+
+    .container {
+      width: 100vw;
+      max-width: 100%;
+    }
+
+    .border-top {
+      border-top: 1px solid black;
+    }
+
+    .border-bot {
+      border-bottom: 1px solid black;
+    }
+
+    .border-xy {
+      border: 1px solid black;
+    }
+
+    .border-x {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .margin-bot-1 {
+      margin-bottom: 1em;
+    }
+
+    .margin-bot-5 {
+      margin-bottom: 5em;
+    }
+
+    .margin-top-1 {
+      margin-top: 1em;
+    }
+
+    .margin-top-5 {
+      margin-top: 5em;
+    }
+
+    .padding-x-1 {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    .left-half {
+      width: 48vw;
+      float: left;
+    }
+
+    .right-half {
+      width: 48vw;
+      float: right;
+    }
+
+    .parent {
+      display: block;
+      overflow: overlay;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header margin-bot-1 border-bot">
+      <h2>Tabacco d.o.o.</h2>
+      <p>
+        Stjepana Fabeka 12, 10290 Zaprešić <br />
+        MB: 3733106,OIB:16330300003, PDV ID: HR16330300003, IBAN: HR8424840081105637623 <br />
+        tel.: 01/3311-331, fax: 01/3311-325, e-mail:info@tabacco.hr HR8723600001101280059
+      </p>
+    </div>
+
+    <div class="parent margin-bot-1">
+      <div class="left-half">
+        <div class="border-xy">
+          <h1>HERZI GANZA</h1>
+          <p>
+            Tijadoreviceva 16 <br />
+            21000 Split
+          </p>
+        </div>
+        <div>
+          <p>
+            OIB:
+          </p>
+        </div>
+      </div>
+
+      <div class="right-half">
+        <h2>Racun br. 36/1/10 </h2>
+        <p>
+          <strong>Mjesto i datum:</strong> Zapresic, 08.01.2019. <br />
+          <strong>Datum isporuke:</strong> 08.01.2019. <br />
+          <strong>Valuta placanja:</strong> 08.01.2019. <br />
+          <strong>Po vasoj narudzbi: 30835</strong>
+        </p>
+        <p>
+          <strong>Dokument isporuke: 19OT-10-38 / 08.01.2019.</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="item-table margin-bot-1">
+      <table class="full-width">
+        <tr class="border-x">
+          <th>RB</th>
+          <th>SIFRA</th>
+          <th>Opis proizvoda/usluge</th>
+          <th>JM</th>
+          <th>Kolicina</th>
+          <th>Cijena</th>
+          <th>Pdv</th>
+          <th>Netto Cijena</th>
+          <th>Netto Iznos</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>PuzzlElla</td>
+          <td>HRVATSKI KISOBRAN BY ELLA DVORNIK PUZZLELLA</td>
+          <td>kom</td>
+          <td>1,00</td>
+          <td>280,00</td>
+          <td>25%</td>
+          <td>280,00</td>
+          <td>280,00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>TRANSPORT</td>
+          <td>TRANSPORT</td>
+          <td>KOM</td>
+          <td>1,00</td>
+          <td>16,00</td>
+          <td>25%</td>
+          <td>16,00</td>
+          <td>16,00</td>
+        </tr>
+        <tr class="border-top">
+          <td colspan="6">
+            <strong>Slovima:</strong> tristosedamdeset KN
+          </td>
+          <td colspan="3"
+              class="border-bot"> 
+            <strong>Ukupno:</strong> 296,00</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="parent margin-bot-1">
+      <div class="left-half">
+        <table class="margin-bot-1">
+          <tr class="border-bot">
+            <th>Specifikacija PDV-a</th>
+            <th>Osnovica</th>
+            <th>Porez</th>
+          </tr>
+          <tr>
+            <td>PDV 25%</td>
+            <td>296,00</td>
+            <td>74,00</td>
+          </tr>
+        </table>
+
+        <div>
+          <p>
+            Prilikom placanja molimo Vas da navedete <strong>poziv na broj: 00 19MM-36-w2032</strong> <br />
+            <strong>Sastavio:</strong> Durdica
+          </p>
+        </div>
+      </div>
+      <div class="right-half">
+        <table class="float-right">
+          <tr class="border-bot">
+            <td><strong>Osnovica:</strong></td>
+            <td>296,00</td>
+          </tr>
+          <tr class="border-bot">
+            <td><strong>Pdv:</strong></td>
+            <td>74,00</td>
+          </tr>
+          <tr class="border-bot">
+            <td><strong>Za naplatu:</strong></td>
+            <td>370,00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="parent margin-bot-1">
+        <div class="left-half">
+          JIR: <br />
+          ZKI:
+        </div>
+        <div class="right-half">
+          Vrijeme izdavanja: 11:43 <br />
+          Oznaka operatera: Durdica <br />
+          Fiskalna oznaka placanja: Transakcijski Racun
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

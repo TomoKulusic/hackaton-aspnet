@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace smart_housing_aspnet.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class migration1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -321,8 +321,8 @@ namespace smart_housing_aspnet.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Discriminator", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { 1, "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd", "Role", "User", "user" },
-                    { 2, "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd", "Role", "Admin", "admin" }
+                    { 1, "f855667a-53c4-4617-a581-6be773f0e7ae", "Role", "User", "user" },
+                    { 2, "f855667a-53c4-4617-a581-6be773f0e7ae", "Role", "Admin", "admin" }
                 });
 
             migrationBuilder.InsertData(
@@ -330,12 +330,12 @@ namespace smart_housing_aspnet.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { 5, 0, "1d103325-db67-41d1-8bad-ba661b29cca2", "frano.nola@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEFwMt1Hu8suKX60Zs4eNbQputgnP8oHi2ySDTdYq8TnX1WtXhc3L91RQSOy3VCFd5A==", null, false, "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd", false, "frano.nola" },
-                    { 6, 0, "68215677-9542-4ce2-a4ba-c3c7c8b124d0", "user@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEIIFJdIBzDla5el01b7iqg1k4BlIDCRoMz5raaZ0Io2iuu6h5m11SHUhxz7noAi7Ww==", null, false, "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd", false, "user" },
-                    { 4, 0, "a5a352dc-1175-45b4-ba44-ebf2e933087c", "stipe.brzi@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEAJybhNckEsN//+OlbvL6Csnw60/PmgLaegabujOIikjgZUkaQdFHxH+RzD8cgqKiA==", null, false, "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd", false, "stipe.brzi" },
-                    { 1, 0, "484c134d-7ccc-42b2-bc97-2e765327cfa1", "tomokulusic@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEApDKCQhZUZqQSXGV5U2Sd/RskVh9zYuXGJBFRcabWyvQDlqkx6m08y8u2a3W8aEsQ==", null, false, "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd", false, "tomokulusic" },
-                    { 2, 0, "21e62275-a046-45ae-bdae-dbd1bfd6312d", "petar.kleskovic@enum.hr", false, false, null, null, null, "AQAAAAEAACcQAAAAENCpgJKOh1K+JMUCJVhRT+NfFESLzWyAFwqsFpfUDG+B4ySEELw+GxgoQThXNhM82g==", null, false, "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd", false, "petar.kleskovic" },
-                    { 3, 0, "4ce3cc29-ed4d-49b6-8ddd-99a76b728d9f", "kxl9597@g.rit.edu", false, false, null, null, null, "AQAAAAEAACcQAAAAEAllnN5K4H9djHePI+RB6E68YYJLRGuMp97F9IkknJYLQq82UZ3Py8hoeXX4tDuyPg==", null, false, "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd", false, "kxl9597" }
+                    { 5, 0, "ce842c58-8fbe-4404-b010-6f520fe51da5", "frano.nola@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEDkZNl9v+WRdW9e4axcuS6CXwf7c9lJh9Ndosl80RUwrKuIgBhGg8q/q56m++d0cKg==", null, false, "f855667a-53c4-4617-a581-6be773f0e7ae", false, "frano.nola" },
+                    { 6, 0, "6a40d442-2e81-48a3-a59b-aa8baf0692c6", "user@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEGEctsBvOaFh9SPa0cdZRjG4cL9/OIUKPe73UAUY9O13vVuNCi3l+AfvWwWSYNNqVA==", null, false, "f855667a-53c4-4617-a581-6be773f0e7ae", false, "user" },
+                    { 4, 0, "f5824aeb-96d5-4a3a-b538-d1a72a9074b4", "stipe.brzi@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEK6pLgpV1ziFrbr4ZT3YGyImXdcdMpdqEsChQNKYtwWQ0RhKoEK0UKvIp5SPF9i7TQ==", null, false, "f855667a-53c4-4617-a581-6be773f0e7ae", false, "stipe.brzi" },
+                    { 1, 0, "5ff827ee-83e3-4748-9157-e79fda79b0ce", "tomokulusic@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEOmZJRYZbHAOogz+v5AgWL9ihLbt7J+PsUYIewjjyKT0PaTSh3NqlhG5sf/UsWyhPw==", null, false, "f855667a-53c4-4617-a581-6be773f0e7ae", false, "tomokulusic" },
+                    { 2, 0, "c93e7255-551a-4f50-be37-070949b08cb8", "petar.kleskovic@enum.hr", false, false, null, null, null, "AQAAAAEAACcQAAAAEEtjNe6/BHRldNhmqaeS1Fk1EQgBo4I/WoLlJ0T3ifZ4iujZ4iLkZRFq9ZnQ6H1muw==", null, false, "f855667a-53c4-4617-a581-6be773f0e7ae", false, "petar.kleskovic" },
+                    { 3, 0, "3d1b1e8c-345b-4d7d-82af-08583f29eab6", "kxl9597@g.rit.edu", false, false, null, null, null, "AQAAAAEAACcQAAAAEPHP6DWrvfB2e8yUVFEPvOHcLmM/9jcCwoulnNaAwj3/luwha+MvB5/1kuefcmCpRw==", null, false, "f855667a-53c4-4617-a581-6be773f0e7ae", false, "kxl9597" }
                 });
 
             migrationBuilder.InsertData(
@@ -422,50 +422,50 @@ namespace smart_housing_aspnet.Migrations
                 columns: new[] { "Id", "Amount", "Date", "ElectricityId", "SmartHouseCityRegion", "UserId", "UtilityType", "WaterId" },
                 values: new object[,]
                 {
-                    { 76, 96.209999999999994, new DateTime(2019, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 38 },
-                    { 45, 67.909999999999997, new DateTime(2019, 3, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 15 },
-                    { 44, 41.890000000000001, new DateTime(2019, 3, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 14 },
-                    { 43, 78.909999999999997, new DateTime(2019, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 13 },
-                    { 42, 87.219999999999999, new DateTime(2019, 4, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 12 },
-                    { 41, 111.20999999999999, new DateTime(2019, 4, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 11 },
-                    { 40, 60.810000000000002, new DateTime(2019, 4, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 10 },
-                    { 39, 67.909999999999997, new DateTime(2019, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 6, 0, 1, 9 },
-                    { 38, 78.909999999999997, new DateTime(2019, 4, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 6, 0, 1, 8 },
-                    { 46, 111.20999999999999, new DateTime(2019, 3, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 16 },
-                    { 37, 41.899999999999999, new DateTime(2019, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 1, 0, 1, 7 },
-                    { 35, 151.99000000000001, new DateTime(2019, 4, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 1, 0, 1, 5 },
-                    { 34, 51.210000000000001, new DateTime(2019, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 1, 0, 1, 4 },
-                    { 33, 111.20999999999999, new DateTime(2019, 4, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 3 },
-                    { 32, 121.91, new DateTime(2019, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 2 },
-                    { 31, 78.909999999999997, new DateTime(2019, 4, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 1 },
-                    { 82, 81.269999999999996, new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 41 },
-                    { 84, 68.920000000000002, new DateTime(2019, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 42 },
-                    { 86, 69.819999999999993, new DateTime(2019, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 43 },
-                    { 36, 56.780000000000001, new DateTime(2019, 4, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 1, 0, 1, 6 },
-                    { 78, 85.920000000000002, new DateTime(2019, 3, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 39 },
-                    { 47, 56.780000000000001, new DateTime(2019, 3, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 17 },
-                    { 49, 78.909999999999997, new DateTime(2019, 3, 26, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 19 },
-                    { 74, 86.569999999999993, new DateTime(2019, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 37 },
-                    { 72, 95.209999999999994, new DateTime(2019, 3, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 36 },
-                    { 70, 49.210000000000001, new DateTime(2019, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 35 },
-                    { 68, 81.209999999999994, new DateTime(2019, 3, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 34 },
-                    { 66, 89.010000000000005, new DateTime(2019, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 33 },
-                    { 64, 71.890000000000001, new DateTime(2019, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 32 },
-                    { 62, 90.709999999999994, new DateTime(2019, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 31 },
-                    { 60, 81.980000000000004, new DateTime(2019, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 30 },
-                    { 48, 41.899999999999999, new DateTime(2019, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 18 },
-                    { 59, 71.209999999999994, new DateTime(2019, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 29 },
-                    { 57, 56.780000000000001, new DateTime(2019, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 27 },
-                    { 56, 111.20999999999999, new DateTime(2019, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 26 },
-                    { 55, 67.909999999999997, new DateTime(2019, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 25 },
-                    { 54, 78.909999999999997, new DateTime(2019, 3, 21, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 24 },
-                    { 53, 60.810000000000002, new DateTime(2019, 3, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 23 },
-                    { 52, 56.780000000000001, new DateTime(2019, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 22 },
-                    { 51, 41.890000000000001, new DateTime(2019, 3, 24, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 21 },
-                    { 80, 85.709999999999994, new DateTime(2019, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 40 },
-                    { 58, 67.909999999999997, new DateTime(2019, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 28 },
-                    { 50, 67.909999999999997, new DateTime(2019, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 20 },
-                    { 1, 53.210000000000001, new DateTime(2019, 4, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 1, 0, 2, null },
+                    { 76, 1854.6072999999999, new DateTime(2019, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 38 },
+                    { 45, 2418.6707999999999, new DateTime(2019, 3, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 15 },
+                    { 44, 2651.8244999999997, new DateTime(2019, 3, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 14 },
+                    { 43, 2276.5944999999997, new DateTime(2019, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 13 },
+                    { 42, 1624.1244999999999, new DateTime(2019, 4, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 12 },
+                    { 41, 1337.3244999999999, new DateTime(2019, 4, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 11 },
+                    { 40, 1082.192, new DateTime(2019, 4, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 10 },
+                    { 39, 1045.7445, new DateTime(2019, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 6, 0, 1, 9 },
+                    { 38, 2663.7745, new DateTime(2019, 4, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 6, 0, 1, 8 },
+                    { 46, 1636.9352999999999, new DateTime(2019, 3, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 16 },
+                    { 37, 938.79199999999992, new DateTime(2019, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 1, 0, 1, 7 },
+                    { 35, 1146.1244999999999, new DateTime(2019, 4, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 1, 0, 1, 5 },
+                    { 34, 1571.5444999999997, new DateTime(2019, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 1, 0, 1, 4 },
+                    { 33, 1333.1420000000001, new DateTime(2019, 4, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 3 },
+                    { 32, 1795.0094999999999, new DateTime(2019, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 2 },
+                    { 31, 1197.5094999999999, new DateTime(2019, 4, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 1 },
+                    { 82, 994.35949999999991, new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 41 },
+                    { 84, 297.83390000000003, new DateTime(2019, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 42 },
+                    { 86, 1173.6094999999998, new DateTime(2019, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 43 },
+                    { 36, 850.95949999999982, new DateTime(2019, 4, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 1, 0, 1, 6 },
+                    { 78, 938.19450000000006, new DateTime(2019, 3, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 39 },
+                    { 47, 1873.4443000000001, new DateTime(2019, 3, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 17 },
+                    { 49, 2515.9953, new DateTime(2019, 3, 26, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 19 },
+                    { 74, 680.07449999999994, new DateTime(2019, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 37 },
+                    { 72, 1635.0516, new DateTime(2019, 3, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 36 },
+                    { 70, 819.41149999999982, new DateTime(2019, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 35 },
+                    { 68, 1655.9816000000001, new DateTime(2019, 3, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, 0, 1, 34 },
+                    { 66, 214.02449999999999, new DateTime(2019, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 33 },
+                    { 64, 1526.0063, new DateTime(2019, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 32 },
+                    { 62, 1066.0594999999998, new DateTime(2019, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 8, 0, 1, 31 },
+                    { 60, 3619.0063, new DateTime(2019, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 30 },
+                    { 48, 723.34080000000006, new DateTime(2019, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 18 },
+                    { 59, 3729.9353000000001, new DateTime(2019, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 29 },
+                    { 57, 2962.8508000000002, new DateTime(2019, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 27 },
+                    { 56, 1454.8443, new DateTime(2019, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 26 },
+                    { 55, 1874.4908, new DateTime(2019, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 25 },
+                    { 54, 1176.4753000000001, new DateTime(2019, 3, 21, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 24 },
+                    { 53, 4839.2253000000001, new DateTime(2019, 3, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 23 },
+                    { 52, 5055.8508000000002, new DateTime(2019, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 22 },
+                    { 51, 3505.9842999999996, new DateTime(2019, 3, 24, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 21 },
+                    { 80, 1825.3052999999998, new DateTime(2019, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 40 },
+                    { 58, 2369.4852999999998, new DateTime(2019, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 4, 0, 1, 28 },
+                    { 50, 2593.4362999999998, new DateTime(2019, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 7, 0, 1, 20 },
+                    { 1, 1.0, new DateTime(2019, 4, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 1, 0, 2, null },
                     { 89, 72.890000000000001, new DateTime(2019, 2, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), 45, 7, 0, 2, null },
                     { 20, 111.20999999999999, new DateTime(2019, 3, 24, 0, 0, 0, 0, DateTimeKind.Unspecified), 20, 5, 0, 2, null },
                     { 19, 60.810000000000002, new DateTime(2019, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), 19, 5, 0, 2, null },
@@ -499,7 +499,7 @@ namespace smart_housing_aspnet.Migrations
                     { 75, 71.930000000000007, new DateTime(2019, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), 38, 5, 0, 2, null },
                     { 73, 72.310000000000002, new DateTime(2019, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), 37, 7, 0, 2, null },
                     { 71, 59.609999999999999, new DateTime(2019, 3, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), 36, 6, 0, 2, null },
-                    { 88, 61.719999999999999, new DateTime(2019, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 44 },
+                    { 88, 2120.6275999999998, new DateTime(2019, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 3, 0, 1, 44 },
                     { 69, 71.849999999999994, new DateTime(2019, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), 35, 1, 0, 2, null },
                     { 65, 92.609999999999999, new DateTime(2019, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), 33, 7, 0, 2, null },
                     { 63, 61.719999999999999, new DateTime(2019, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), 32, 6, 0, 2, null },
@@ -511,7 +511,7 @@ namespace smart_housing_aspnet.Migrations
                     { 26, 111.20999999999999, new DateTime(2019, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), 26, 4, 0, 2, null },
                     { 25, 151.99000000000001, new DateTime(2019, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), 25, 4, 0, 2, null },
                     { 67, 71.510000000000005, new DateTime(2019, 3, 11, 0, 0, 0, 0, DateTimeKind.Unspecified), 34, 5, 0, 2, null },
-                    { 90, 86.319999999999993, new DateTime(2019, 2, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 45 }
+                    { 90, 935.92399999999986, new DateTime(2019, 2, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, 0, 1, 45 }
                 });
 
             migrationBuilder.CreateIndex(

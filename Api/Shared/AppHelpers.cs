@@ -55,5 +55,12 @@ namespace SmartHousing.API.Shared
       url2 = url2.TrimStart('/', '\\');
       return string.Format("{0}/{1}", url1, url2);
     }
+
+    public static string BaseUrl(IHttpContextAccessor httpContext)
+    {
+      var request = httpContext.HttpContext.Request;
+      var baseUrl = $"{request.Scheme}://{request.Host}";
+      return baseUrl;
+    }
   }
 }

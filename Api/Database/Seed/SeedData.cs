@@ -9,6 +9,21 @@ namespace SmartHousing.API.Database.Seed
 {
   public static class SeedData
   {
+    static SeedData()
+    {
+      foreach (var utility in SeedData.Utilities)
+      {
+        if (utility.UtilityType == UtilityType.Water)
+        {
+          var sum = SeedData.Water.Where(m => m.Id == utility.WaterId).Sum(m =>
+          {
+            return m.Amount * SeedData.WaterTariff.Where(x => x.Id == m.TarriffId).First().Tariff;
+          });
+          utility.Amount = sum;
+        }
+      }
+    }
+
     private static string randomGuid = Guid.NewGuid().ToString();
     private static PasswordHasher<User> hasher = new PasswordHasher<User>();
 
@@ -58,16 +73,16 @@ namespace SmartHousing.API.Database.Seed
 
     public static List<Water> Water = new List<Water>
     {
-      new Water { Id = 1, Amount = 100.21, TarriffId = 1 },
-      new Water { Id = 2, Amount = 150.21, TarriffId = 1 },
-      new Water { Id = 3, Amount = 111.56, TarriffId = 1 },
-      new Water { Id = 4, Amount = 131.51, TarriffId = 1 },
-      new Water { Id = 5, Amount = 95.91, TarriffId = 1 },
-      new Water { Id = 6, Amount = 71.21, TarriffId = 1 },
-      new Water { Id = 7, Amount = 78.56, TarriffId = 1 },
-      new Water { Id = 8, Amount = 222.91, TarriffId = 1 },
-      new Water { Id = 9, Amount = 87.51, TarriffId = 1 },
-      new Water { Id = 10, Amount = 90.56, TarriffId = 1 },
+      new Water { Id = 1, Amount = 0.30, TarriffId = 1 },
+      new Water { Id = 2, Amount = 0.19, TarriffId = 1 },
+      new Water { Id = 3, Amount = 0.27, TarriffId = 1 },
+      new Water { Id = 4, Amount = 0.71, TarriffId = 1 },
+      new Water { Id = 5, Amount = 0.11, TarriffId = 1 },
+      new Water { Id = 6, Amount = 0.31, TarriffId = 1 },
+      new Water { Id = 7, Amount = 0.22, TarriffId = 1 },
+      new Water { Id = 8, Amount = 0.12, TarriffId = 1 },
+      new Water { Id = 9, Amount = 0.11, TarriffId = 1 },
+      new Water { Id = 10, Amount = 0.12, TarriffId = 1 },
       new Water { Id = 11, Amount = 111.91, TarriffId = 1 },
       new Water { Id = 12, Amount = 135.91, TarriffId = 1 },
       new Water { Id = 13, Amount = 190.51, TarriffId = 1 },
@@ -162,12 +177,12 @@ namespace SmartHousing.API.Database.Seed
       new Electricity { Id = 48, Amount = 79.37, TarriffId = 1 },
       new Electricity { Id = 49, Amount = 61.28, TarriffId = 2 },
       new Electricity { Id = 50, Amount = 39.91, TarriffId = 3 },
-      
+
     };
 
     public static List<Utility> Utilities = new List<Utility>
     {
-      new Utility { Id = 1, WaterId = null,  ElectricityId = 1, SmartHouseCityRegion = SmartHouseCityRegion.Centar, Date = new DateTime(2019, 4, 13), Amount = 53.21, UtilityType = UtilityType.Electricity },
+      new Utility { Id = 1, WaterId = null,  ElectricityId = 1, SmartHouseCityRegion = SmartHouseCityRegion.Centar, Date = new DateTime(2019, 4, 13), Amount = 1, UtilityType = UtilityType.Electricity },
       new Utility { Id = 2, WaterId = null,  ElectricityId = 2, SmartHouseCityRegion = SmartHouseCityRegion.Centar, Date = new DateTime(2019, 4, 12), Amount = 43.21, UtilityType = UtilityType.Electricity },
       new Utility { Id = 3, WaterId = null,  ElectricityId = 3, SmartHouseCityRegion = SmartHouseCityRegion.Centar, Date = new DateTime(2019, 4, 11), Amount = 65.11, UtilityType = UtilityType.Electricity },
       new Utility { Id = 4, WaterId = null,  ElectricityId = 4, SmartHouseCityRegion = SmartHouseCityRegion.Batala, Date = new DateTime(2019, 4, 10), Amount = 112.21, UtilityType = UtilityType.Electricity },

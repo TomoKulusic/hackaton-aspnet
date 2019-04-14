@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <title>HTML Preview</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat"
+        rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      padding: 0 1em 0 1em;
+      text-align: left;
+    }
+
+    .float-right {
+      float: right;
+    }
+
+    .full-width {
+      width: 100vw;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .border-top {
+      border-top: 2px solid #ac2f3b;
+    }
+
+    .border-bot {
+      border-bottom: 1px solid black;
+    }
+
+    .table-header {
+      border-top: 1px solid #ac2f3b;
+      border-bottom: 2px solid #ac2f3b;
+    }
+
+    th,
+    td {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    #finalTable {
+      width: 300px;
+    }
+
+    .margin-bot-1 {
+      margin-bottom: 1em;
+    }
+
+    .margin-bot-5 {
+      margin-bottom: 5em;
+    }
+
+    .margin-top-1 {
+      margin-top: 1em;
+    }
+
+    .margin-top-5 {
+      margin-top: 5em;
+    }
+
+    .padding-bot-3 {
+      padding-bottom: 3em;
+    }
+
+    .padding-x-1 {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    .padding-y-2 {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+    .left-half {
+      width: 48vw;
+      float: left;
+    }
+
+    .right-half {
+      width: 48vw;
+      float: right;
+    }
+
+    .parent {
+      display: block;
+      overflow: overlay;
+    }
+
+    tr:nth-child(even) {
+      background: rgb(230, 230, 230)
+    }
+
+    #company-header {
+      display: block;
+    }
+
+    #company-logo {
+      height: 70px;
+      display: block;
+      background-image: url("{{{RootUrl}}}/invoice-assets/customer_logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 50%;
+      padding-right: 50px;
+      padding-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header margin-bot-1 padding-y-2">
+      <div id="company-logo"></div>
+      <div id="company-header">
+        <h2>Tabacco d.o.o.</h2>
+      </div>
+    </div>
+
+    <div class="parent margin-bot-5">
+      <div class="left-half">
+        <div>
+          <h1>{{CustomerName}}</h1>
+          <p>
+            {{CustomerAddress}} <br />
+            {{CustomerCityZip}}
+          </p>
+        </div>
+        <div>
+          <p>
+            OIB: {{CustomerOib}}
+          </p>
+        </div>
+      </div>
+
+      <div class="right-half">
+        <h2>Racun br. {{InvoiceNumber}} </h2>
+
+        <p>
+          <strong>Mjesto i datum:</strong> {{InvoicePlaceDate}} <br />
+          <strong>Datum isporuke:</strong> {{DeliveryDate}} <br />
+          <strong>Valuta placanja:</strong> {{Currency}} <br />
+          <strong>Po vasoj narudzbi: {{OrderNumber}}</strong>
+        </p>
+        <p>
+          <strong>Dokument isporuke: {{DocumentId}}</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="item-table margin-bot-1">
+      <table class="full-width">
+        <tr class="table-header">
+          <th>#</th>
+          <th>Sifra</th>
+          <th>Naziv</th>
+          <th>JM</th>
+          <th>Količina</th>
+          <th>Cijena</th>
+          <th>Pdv</th>
+          <th>Neto Cijena</th>
+          <th>Neto Iznos</th>
+        </tr>
+        {{#each Items}}
+          <tr>
+            <td>{{this.ItemNumber}}</td>
+            <td>{{this.Code}}</td>
+            <td>{{this.Name}}</td>
+            <td>{{this.Unit}}</td>
+            <td>{{this.Amount}}</td>
+            <td>{{this.Price}}</td>
+            <td>{{this.Tax}}%</td>
+            <td>{{this.Total}}</td>
+            <td>{{this.Total}}</td>
+          </tr>
+        {{/each}}
+        <tr class="border-top">
+          <td colspan="6">
+            <strong>Slovima:</strong> {{TotalAmountText}} {{Currency}}
+          </td>
+          <td colspan="3">
+            <strong>Ukupno:</strong> {{TotalAmountNumber}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="parent margin-bot-5">
+      <div class="left-half">
+        <table class="margin-bot-1">
+          <tr>
+            <th>Specifikacija PDV-a</th>
+            <th>Osnovica</th>
+            <th>Porez</th>
+          </tr>
+          <tr>
+            <td>PDV 25%</td>
+            <td>{{TotalAmountNumber}}</td>
+            <td>{{TaxAmount}}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="right-half">
+        <table class="float-right"
+               id="finalTable">
+          <tr>
+            <td><strong>Osnovica:</strong></td>
+            <td>{{TotalAmountNumber}}</td>
+          </tr>
+          <tr>
+            <td><strong>Pdv:</strong></td>
+            <td>{{TaxAmount}}</td>
+          </tr>
+          <tr>
+            <td><strong>Za naplatu:</strong></td>
+            <td>{{TotalPlusTax}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <p>
+        {{InvoiceRemark}}<br />
+        <strong>Sastavio:</strong> {{ClerkName}}
+      </p>
+    </div>
+
+    <div class="footer">
+      <div class="parent margin-bot-1">
+        <div class="left-half">
+          JIR: {{Jir}}<br />
+          ZKI: {{Zki}}
+        </div>
+        <div class="right-half">
+          Vrijeme izdavanja: {{InvoiceTime}} <br />
+          Oznaka operatera: {{ClerkName}} <br />
+          Fiskalna oznaka placanja: {{PaymentType}}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -10,8 +10,8 @@ using SmartHousing.API.Database.Context;
 namespace smart_housing_aspnet.Migrations
 {
     [DbContext(typeof(SmartHousingContext))]
-    [Migration("20190414135111_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20190414145219_migration1")]
+    partial class migration1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -565,13 +565,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "484c134d-7ccc-42b2-bc97-2e765327cfa1",
+                            ConcurrencyStamp = "5ff827ee-83e3-4748-9157-e79fda79b0ce",
                             Email = "tomokulusic@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEApDKCQhZUZqQSXGV5U2Sd/RskVh9zYuXGJBFRcabWyvQDlqkx6m08y8u2a3W8aEsQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEOmZJRYZbHAOogz+v5AgWL9ihLbt7J+PsUYIewjjyKT0PaTSh3NqlhG5sf/UsWyhPw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
+                            SecurityStamp = "f855667a-53c4-4617-a581-6be773f0e7ae",
                             TwoFactorEnabled = false,
                             UserName = "tomokulusic"
                         },
@@ -579,13 +579,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "21e62275-a046-45ae-bdae-dbd1bfd6312d",
+                            ConcurrencyStamp = "c93e7255-551a-4f50-be37-070949b08cb8",
                             Email = "petar.kleskovic@enum.hr",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAENCpgJKOh1K+JMUCJVhRT+NfFESLzWyAFwqsFpfUDG+B4ySEELw+GxgoQThXNhM82g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEEtjNe6/BHRldNhmqaeS1Fk1EQgBo4I/WoLlJ0T3ifZ4iujZ4iLkZRFq9ZnQ6H1muw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
+                            SecurityStamp = "f855667a-53c4-4617-a581-6be773f0e7ae",
                             TwoFactorEnabled = false,
                             UserName = "petar.kleskovic"
                         },
@@ -593,13 +593,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4ce3cc29-ed4d-49b6-8ddd-99a76b728d9f",
+                            ConcurrencyStamp = "3d1b1e8c-345b-4d7d-82af-08583f29eab6",
                             Email = "kxl9597@g.rit.edu",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEAllnN5K4H9djHePI+RB6E68YYJLRGuMp97F9IkknJYLQq82UZ3Py8hoeXX4tDuyPg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPHP6DWrvfB2e8yUVFEPvOHcLmM/9jcCwoulnNaAwj3/luwha+MvB5/1kuefcmCpRw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
+                            SecurityStamp = "f855667a-53c4-4617-a581-6be773f0e7ae",
                             TwoFactorEnabled = false,
                             UserName = "kxl9597"
                         },
@@ -607,13 +607,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a5a352dc-1175-45b4-ba44-ebf2e933087c",
+                            ConcurrencyStamp = "f5824aeb-96d5-4a3a-b538-d1a72a9074b4",
                             Email = "stipe.brzi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEAJybhNckEsN//+OlbvL6Csnw60/PmgLaegabujOIikjgZUkaQdFHxH+RzD8cgqKiA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEK6pLgpV1ziFrbr4ZT3YGyImXdcdMpdqEsChQNKYtwWQ0RhKoEK0UKvIp5SPF9i7TQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
+                            SecurityStamp = "f855667a-53c4-4617-a581-6be773f0e7ae",
                             TwoFactorEnabled = false,
                             UserName = "stipe.brzi"
                         },
@@ -621,13 +621,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1d103325-db67-41d1-8bad-ba661b29cca2",
+                            ConcurrencyStamp = "ce842c58-8fbe-4404-b010-6f520fe51da5",
                             Email = "frano.nola@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEFwMt1Hu8suKX60Zs4eNbQputgnP8oHi2ySDTdYq8TnX1WtXhc3L91RQSOy3VCFd5A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDkZNl9v+WRdW9e4axcuS6CXwf7c9lJh9Ndosl80RUwrKuIgBhGg8q/q56m++d0cKg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
+                            SecurityStamp = "f855667a-53c4-4617-a581-6be773f0e7ae",
                             TwoFactorEnabled = false,
                             UserName = "frano.nola"
                         },
@@ -635,13 +635,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 6,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "68215677-9542-4ce2-a4ba-c3c7c8b124d0",
+                            ConcurrencyStamp = "6a40d442-2e81-48a3-a59b-aa8baf0692c6",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEIIFJdIBzDla5el01b7iqg1k4BlIDCRoMz5raaZ0Io2iuu6h5m11SHUhxz7noAi7Ww==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGEctsBvOaFh9SPa0cdZRjG4cL9/OIUKPe73UAUY9O13vVuNCi3l+AfvWwWSYNNqVA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
+                            SecurityStamp = "f855667a-53c4-4617-a581-6be773f0e7ae",
                             TwoFactorEnabled = false,
                             UserName = "user"
                         });
@@ -679,7 +679,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            Amount = 53.210000000000001,
+                            Amount = 1.0,
                             Date = new DateTime(2019, 4, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ElectricityId = 1,
                             SmartHouseCityRegion = 1,
@@ -979,7 +979,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 31,
-                            Amount = 78.909999999999997,
+                            Amount = 1197.5094999999999,
                             Date = new DateTime(2019, 4, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 8,
                             UserId = 0,
@@ -989,7 +989,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 32,
-                            Amount = 121.91,
+                            Amount = 1795.0094999999999,
                             Date = new DateTime(2019, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 8,
                             UserId = 0,
@@ -999,7 +999,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 33,
-                            Amount = 111.20999999999999,
+                            Amount = 1333.1420000000001,
                             Date = new DateTime(2019, 4, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 8,
                             UserId = 0,
@@ -1009,7 +1009,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 34,
-                            Amount = 51.210000000000001,
+                            Amount = 1571.5444999999997,
                             Date = new DateTime(2019, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 1,
                             UserId = 0,
@@ -1019,7 +1019,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 35,
-                            Amount = 151.99000000000001,
+                            Amount = 1146.1244999999999,
                             Date = new DateTime(2019, 4, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 1,
                             UserId = 0,
@@ -1029,7 +1029,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 36,
-                            Amount = 56.780000000000001,
+                            Amount = 850.95949999999982,
                             Date = new DateTime(2019, 4, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 1,
                             UserId = 0,
@@ -1039,7 +1039,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 37,
-                            Amount = 41.899999999999999,
+                            Amount = 938.79199999999992,
                             Date = new DateTime(2019, 4, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 1,
                             UserId = 0,
@@ -1049,7 +1049,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 38,
-                            Amount = 78.909999999999997,
+                            Amount = 2663.7745,
                             Date = new DateTime(2019, 4, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 6,
                             UserId = 0,
@@ -1059,7 +1059,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 39,
-                            Amount = 67.909999999999997,
+                            Amount = 1045.7445,
                             Date = new DateTime(2019, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 6,
                             UserId = 0,
@@ -1069,7 +1069,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 40,
-                            Amount = 60.810000000000002,
+                            Amount = 1082.192,
                             Date = new DateTime(2019, 4, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 3,
                             UserId = 0,
@@ -1079,7 +1079,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 41,
-                            Amount = 111.20999999999999,
+                            Amount = 1337.3244999999999,
                             Date = new DateTime(2019, 4, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 3,
                             UserId = 0,
@@ -1089,7 +1089,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 42,
-                            Amount = 87.219999999999999,
+                            Amount = 1624.1244999999999,
                             Date = new DateTime(2019, 4, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 3,
                             UserId = 0,
@@ -1099,7 +1099,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 43,
-                            Amount = 78.909999999999997,
+                            Amount = 2276.5944999999997,
                             Date = new DateTime(2019, 4, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 2,
                             UserId = 0,
@@ -1109,7 +1109,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 44,
-                            Amount = 41.890000000000001,
+                            Amount = 2651.8244999999997,
                             Date = new DateTime(2019, 3, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 2,
                             UserId = 0,
@@ -1119,7 +1119,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 45,
-                            Amount = 67.909999999999997,
+                            Amount = 2418.6707999999999,
                             Date = new DateTime(2019, 3, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 2,
                             UserId = 0,
@@ -1129,7 +1129,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 46,
-                            Amount = 111.20999999999999,
+                            Amount = 1636.9352999999999,
                             Date = new DateTime(2019, 3, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 2,
                             UserId = 0,
@@ -1139,7 +1139,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 47,
-                            Amount = 56.780000000000001,
+                            Amount = 1873.4443000000001,
                             Date = new DateTime(2019, 3, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 7,
                             UserId = 0,
@@ -1149,7 +1149,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 48,
-                            Amount = 41.899999999999999,
+                            Amount = 723.34080000000006,
                             Date = new DateTime(2019, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 7,
                             UserId = 0,
@@ -1159,7 +1159,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 49,
-                            Amount = 78.909999999999997,
+                            Amount = 2515.9953,
                             Date = new DateTime(2019, 3, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 7,
                             UserId = 0,
@@ -1169,7 +1169,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 50,
-                            Amount = 67.909999999999997,
+                            Amount = 2593.4362999999998,
                             Date = new DateTime(2019, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 7,
                             UserId = 0,
@@ -1179,7 +1179,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 51,
-                            Amount = 41.890000000000001,
+                            Amount = 3505.9842999999996,
                             Date = new DateTime(2019, 3, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 7,
                             UserId = 0,
@@ -1189,7 +1189,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 52,
-                            Amount = 56.780000000000001,
+                            Amount = 5055.8508000000002,
                             Date = new DateTime(2019, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 5,
                             UserId = 0,
@@ -1199,7 +1199,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 53,
-                            Amount = 60.810000000000002,
+                            Amount = 4839.2253000000001,
                             Date = new DateTime(2019, 3, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 5,
                             UserId = 0,
@@ -1209,7 +1209,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 54,
-                            Amount = 78.909999999999997,
+                            Amount = 1176.4753000000001,
                             Date = new DateTime(2019, 3, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 5,
                             UserId = 0,
@@ -1219,7 +1219,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 55,
-                            Amount = 67.909999999999997,
+                            Amount = 1874.4908,
                             Date = new DateTime(2019, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 5,
                             UserId = 0,
@@ -1229,7 +1229,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 56,
-                            Amount = 111.20999999999999,
+                            Amount = 1454.8443,
                             Date = new DateTime(2019, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 5,
                             UserId = 0,
@@ -1239,7 +1239,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 57,
-                            Amount = 56.780000000000001,
+                            Amount = 2962.8508000000002,
                             Date = new DateTime(2019, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
@@ -1249,7 +1249,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 58,
-                            Amount = 67.909999999999997,
+                            Amount = 2369.4852999999998,
                             Date = new DateTime(2019, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
@@ -1259,7 +1259,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 59,
-                            Amount = 71.209999999999994,
+                            Amount = 3729.9353000000001,
                             Date = new DateTime(2019, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
@@ -1269,7 +1269,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 60,
-                            Amount = 81.980000000000004,
+                            Amount = 3619.0063,
                             Date = new DateTime(2019, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
@@ -1289,7 +1289,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 62,
-                            Amount = 90.709999999999994,
+                            Amount = 1066.0594999999998,
                             Date = new DateTime(2019, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 8,
                             UserId = 0,
@@ -1309,7 +1309,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 64,
-                            Amount = 71.890000000000001,
+                            Amount = 1526.0063,
                             Date = new DateTime(2019, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 3,
                             UserId = 0,
@@ -1329,7 +1329,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 66,
-                            Amount = 89.010000000000005,
+                            Amount = 214.02449999999999,
                             Date = new DateTime(2019, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
@@ -1349,7 +1349,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 68,
-                            Amount = 81.209999999999994,
+                            Amount = 1655.9816000000001,
                             Date = new DateTime(2019, 3, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 2,
                             UserId = 0,
@@ -1369,7 +1369,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 70,
-                            Amount = 49.210000000000001,
+                            Amount = 819.41149999999982,
                             Date = new DateTime(2019, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 8,
                             UserId = 0,
@@ -1389,7 +1389,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 72,
-                            Amount = 95.209999999999994,
+                            Amount = 1635.0516,
                             Date = new DateTime(2019, 3, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 3,
                             UserId = 0,
@@ -1409,7 +1409,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 74,
-                            Amount = 86.569999999999993,
+                            Amount = 680.07449999999994,
                             Date = new DateTime(2019, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
@@ -1429,7 +1429,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 76,
-                            Amount = 96.209999999999994,
+                            Amount = 1854.6072999999999,
                             Date = new DateTime(2019, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 2,
                             UserId = 0,
@@ -1449,7 +1449,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 78,
-                            Amount = 85.920000000000002,
+                            Amount = 938.19450000000006,
                             Date = new DateTime(2019, 3, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 8,
                             UserId = 0,
@@ -1469,7 +1469,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 80,
-                            Amount = 85.709999999999994,
+                            Amount = 1825.3052999999998,
                             Date = new DateTime(2019, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 3,
                             UserId = 0,
@@ -1489,7 +1489,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 82,
-                            Amount = 81.269999999999996,
+                            Amount = 994.35949999999991,
                             Date = new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
@@ -1509,7 +1509,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 84,
-                            Amount = 68.920000000000002,
+                            Amount = 297.83390000000003,
                             Date = new DateTime(2019, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 2,
                             UserId = 0,
@@ -1529,7 +1529,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 86,
-                            Amount = 69.819999999999993,
+                            Amount = 1173.6094999999998,
                             Date = new DateTime(2019, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 8,
                             UserId = 0,
@@ -1549,7 +1549,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 88,
-                            Amount = 61.719999999999999,
+                            Amount = 2120.6275999999998,
                             Date = new DateTime(2019, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 3,
                             UserId = 0,
@@ -1569,7 +1569,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 90,
-                            Amount = 86.319999999999993,
+                            Amount = 935.92399999999986,
                             Date = new DateTime(2019, 2, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 5,
                             UserId = 0,
@@ -1934,14 +1934,14 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
+                            ConcurrencyStamp = "f855667a-53c4-4617-a581-6be773f0e7ae",
                             Name = "User",
                             NormalizedName = "user"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
+                            ConcurrencyStamp = "f855667a-53c4-4617-a581-6be773f0e7ae",
                             Name = "Admin",
                             NormalizedName = "admin"
                         });
