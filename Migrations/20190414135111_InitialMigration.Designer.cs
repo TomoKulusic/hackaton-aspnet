@@ -10,7 +10,7 @@ using SmartHousing.API.Database.Context;
 namespace smart_housing_aspnet.Migrations
 {
     [DbContext(typeof(SmartHousingContext))]
-    [Migration("20190414120501_InitialMigration")]
+    [Migration("20190414135111_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -163,7 +163,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 2,
-                            Amount = 150.21000000000001,
+                            Amount = 81.209999999999994,
                             TarriffId = 1
                         },
                         new
@@ -199,7 +199,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 8,
-                            Amount = 222.91,
+                            Amount = 71.909999999999997,
                             TarriffId = 1
                         },
                         new
@@ -217,31 +217,31 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 11,
-                            Amount = 111.91,
+                            Amount = 81.909999999999997,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 12,
-                            Amount = 135.91,
+                            Amount = 67.909999999999997,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 13,
-                            Amount = 190.50999999999999,
+                            Amount = 89.510000000000005,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 14,
-                            Amount = 221.91,
+                            Amount = 86.909999999999997,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 15,
-                            Amount = 115.56,
+                            Amount = 71.560000000000002,
                             TarriffId = 2
                         },
                         new
@@ -265,31 +265,31 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 19,
-                            Amount = 120.20999999999999,
+                            Amount = 62.210000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 20,
-                            Amount = 123.91,
+                            Amount = 69.909999999999997,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 21,
-                            Amount = 167.50999999999999,
+                            Amount = 67.510000000000005,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 22,
-                            Amount = 241.56,
+                            Amount = 81.560000000000002,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 23,
-                            Amount = 231.21000000000001,
+                            Amount = 51.210000000000001,
                             TarriffId = 3
                         },
                         new
@@ -313,25 +313,145 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 27,
-                            Amount = 141.56,
+                            Amount = 41.560000000000002,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 28,
-                            Amount = 113.20999999999999,
+                            Amount = 81.209999999999994,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 29,
-                            Amount = 178.21000000000001,
+                            Amount = 71.209999999999994,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 30,
-                            Amount = 172.91,
+                            Amount = 78.510000000000005,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Amount = 46.609999999999999,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Amount = 69.109999999999999,
+                            TarriffId = 3
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Amount = 54.210000000000001,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Amount = 79.609999999999999,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Amount = 91.909999999999997,
+                            TarriffId = 3
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Amount = 99.120000000000005,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Amount = 101.91,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Amount = 60.979999999999997,
+                            TarriffId = 3
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Amount = 71.310000000000002,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Amount = 75.909999999999997,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Amount = 68.390000000000001,
+                            TarriffId = 3
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Amount = 91.540000000000006,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Amount = 71.959999999999994,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Amount = 72.609999999999999,
+                            TarriffId = 3
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Amount = 81.609999999999999,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Amount = 76.900000000000006,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Amount = 28.309999999999999,
+                            TarriffId = 3
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Amount = 79.370000000000005,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Amount = 61.280000000000001,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Amount = 39.909999999999997,
                             TarriffId = 3
                         });
                 });
@@ -445,13 +565,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "579a06c7-ec3e-4e3e-bfae-1e90835a2bf9",
+                            ConcurrencyStamp = "484c134d-7ccc-42b2-bc97-2e765327cfa1",
                             Email = "tomokulusic@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEEAWzwaIZJ78S3iLqONs9mRraGGJtcMKM2hWN7tI2KQuYJ/l2R7WZbanVXHqfBbb+A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEApDKCQhZUZqQSXGV5U2Sd/RskVh9zYuXGJBFRcabWyvQDlqkx6m08y8u2a3W8aEsQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "06fa6ac3-9c28-4a25-b139-90b516a08d9b",
+                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
                             TwoFactorEnabled = false,
                             UserName = "tomokulusic"
                         },
@@ -459,13 +579,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ebac6039-3366-4439-aa46-205bf8eff5dc",
+                            ConcurrencyStamp = "21e62275-a046-45ae-bdae-dbd1bfd6312d",
                             Email = "petar.kleskovic@enum.hr",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEEx7mJoUvErJtsUZKmUbnOi2wmkF/p5yODizt43TJthSQGqNZJ0RdkoPWt1yoRauXw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENCpgJKOh1K+JMUCJVhRT+NfFESLzWyAFwqsFpfUDG+B4ySEELw+GxgoQThXNhM82g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "06fa6ac3-9c28-4a25-b139-90b516a08d9b",
+                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
                             TwoFactorEnabled = false,
                             UserName = "petar.kleskovic"
                         },
@@ -473,13 +593,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8131cfc5-4f45-40bb-91c3-76c155f3a08c",
+                            ConcurrencyStamp = "4ce3cc29-ed4d-49b6-8ddd-99a76b728d9f",
                             Email = "kxl9597@g.rit.edu",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEEuPrKV4hHcEs0fRhV0Ut+txUGUqxv8f8wFDl0mHQNUA2xdA0vV7ya0laRHZb8kWFg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAllnN5K4H9djHePI+RB6E68YYJLRGuMp97F9IkknJYLQq82UZ3Py8hoeXX4tDuyPg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "06fa6ac3-9c28-4a25-b139-90b516a08d9b",
+                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
                             TwoFactorEnabled = false,
                             UserName = "kxl9597"
                         },
@@ -487,13 +607,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "046f4737-ebde-434d-a82f-f9515fd96df0",
+                            ConcurrencyStamp = "a5a352dc-1175-45b4-ba44-ebf2e933087c",
                             Email = "stipe.brzi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEMpKyAnWP/DZAZ2884m65iDSBLASprG5WplIQcrwfGKPWYehusiufXLlERSUeXl7Bw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAJybhNckEsN//+OlbvL6Csnw60/PmgLaegabujOIikjgZUkaQdFHxH+RzD8cgqKiA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "06fa6ac3-9c28-4a25-b139-90b516a08d9b",
+                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
                             TwoFactorEnabled = false,
                             UserName = "stipe.brzi"
                         },
@@ -501,13 +621,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "81edb4bd-0c3d-4c2f-b751-4fae0ee3aafc",
+                            ConcurrencyStamp = "1d103325-db67-41d1-8bad-ba661b29cca2",
                             Email = "frano.nola@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEDgz26Cz1qaiB9LACluZsmw6n2cKr9vjsjRFaLzBrqGEQHZxyo+WyVwU8xrcP3MRTw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFwMt1Hu8suKX60Zs4eNbQputgnP8oHi2ySDTdYq8TnX1WtXhc3L91RQSOy3VCFd5A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "06fa6ac3-9c28-4a25-b139-90b516a08d9b",
+                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
                             TwoFactorEnabled = false,
                             UserName = "frano.nola"
                         },
@@ -515,13 +635,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 6,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2599d444-0540-46bf-8044-06509e956ac2",
+                            ConcurrencyStamp = "68215677-9542-4ce2-a4ba-c3c7c8b124d0",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEM2vlgCSGJjG2LN6dJ5168c1QXkm4zRCMD3+DsKvNHgTPB7udZ0enjTq1VNrIAk69A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIIFJdIBzDla5el01b7iqg1k4BlIDCRoMz5raaZ0Io2iuu6h5m11SHUhxz7noAi7Ww==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "06fa6ac3-9c28-4a25-b139-90b516a08d9b",
+                            SecurityStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
                             TwoFactorEnabled = false,
                             UserName = "user"
                         });
@@ -1139,7 +1259,7 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 59,
-                            Amount = 111.20999999999999,
+                            Amount = 71.209999999999994,
                             Date = new DateTime(2019, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
@@ -1149,12 +1269,312 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 60,
-                            Amount = 111.20999999999999,
+                            Amount = 81.980000000000004,
                             Date = new DateTime(2019, 3, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SmartHouseCityRegion = 4,
                             UserId = 0,
                             UtilityType = 1,
                             WaterId = 30
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Amount = 91.719999999999999,
+                            Date = new DateTime(2019, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 31,
+                            SmartHouseCityRegion = 1,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Amount = 90.709999999999994,
+                            Date = new DateTime(2019, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 8,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 31
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Amount = 61.719999999999999,
+                            Date = new DateTime(2019, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 32,
+                            SmartHouseCityRegion = 6,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Amount = 71.890000000000001,
+                            Date = new DateTime(2019, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 3,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 32
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Amount = 92.609999999999999,
+                            Date = new DateTime(2019, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 33,
+                            SmartHouseCityRegion = 7,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Amount = 89.010000000000005,
+                            Date = new DateTime(2019, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 4,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 33
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Amount = 71.510000000000005,
+                            Date = new DateTime(2019, 3, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 34,
+                            SmartHouseCityRegion = 5,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Amount = 81.209999999999994,
+                            Date = new DateTime(2019, 3, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 2,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 34
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Amount = 71.849999999999994,
+                            Date = new DateTime(2019, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 35,
+                            SmartHouseCityRegion = 1,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Amount = 49.210000000000001,
+                            Date = new DateTime(2019, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 8,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 35
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Amount = 59.609999999999999,
+                            Date = new DateTime(2019, 3, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 36,
+                            SmartHouseCityRegion = 6,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Amount = 95.209999999999994,
+                            Date = new DateTime(2019, 3, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 3,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 36
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Amount = 72.310000000000002,
+                            Date = new DateTime(2019, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 37,
+                            SmartHouseCityRegion = 7,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Amount = 86.569999999999993,
+                            Date = new DateTime(2019, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 4,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 37
+                        },
+                        new
+                        {
+                            Id = 75,
+                            Amount = 71.930000000000007,
+                            Date = new DateTime(2019, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 38,
+                            SmartHouseCityRegion = 5,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 76,
+                            Amount = 96.209999999999994,
+                            Date = new DateTime(2019, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 2,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 38
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Amount = 61.82,
+                            Date = new DateTime(2019, 3, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 39,
+                            SmartHouseCityRegion = 1,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 78,
+                            Amount = 85.920000000000002,
+                            Date = new DateTime(2019, 3, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 8,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 39
+                        },
+                        new
+                        {
+                            Id = 79,
+                            Amount = 81.930000000000007,
+                            Date = new DateTime(2019, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 40,
+                            SmartHouseCityRegion = 6,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 80,
+                            Amount = 85.709999999999994,
+                            Date = new DateTime(2019, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 3,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 40
+                        },
+                        new
+                        {
+                            Id = 81,
+                            Amount = 78.689999999999998,
+                            Date = new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 41,
+                            SmartHouseCityRegion = 7,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 82,
+                            Amount = 81.269999999999996,
+                            Date = new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 4,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 41
+                        },
+                        new
+                        {
+                            Id = 83,
+                            Amount = 85.790000000000006,
+                            Date = new DateTime(2019, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 42,
+                            SmartHouseCityRegion = 5,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 84,
+                            Amount = 68.920000000000002,
+                            Date = new DateTime(2019, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 2,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 42
+                        },
+                        new
+                        {
+                            Id = 85,
+                            Amount = 96.650000000000006,
+                            Date = new DateTime(2019, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 43,
+                            SmartHouseCityRegion = 1,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 86,
+                            Amount = 69.819999999999993,
+                            Date = new DateTime(2019, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 8,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 43
+                        },
+                        new
+                        {
+                            Id = 87,
+                            Amount = 71.799999999999997,
+                            Date = new DateTime(2019, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 44,
+                            SmartHouseCityRegion = 6,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 88,
+                            Amount = 61.719999999999999,
+                            Date = new DateTime(2019, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 3,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 44
+                        },
+                        new
+                        {
+                            Id = 89,
+                            Amount = 72.890000000000001,
+                            Date = new DateTime(2019, 2, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ElectricityId = 45,
+                            SmartHouseCityRegion = 7,
+                            UserId = 0,
+                            UtilityType = 2
+                        },
+                        new
+                        {
+                            Id = 90,
+                            Amount = 86.319999999999993,
+                            Date = new DateTime(2019, 2, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SmartHouseCityRegion = 5,
+                            UserId = 0,
+                            UtilityType = 1,
+                            WaterId = 45
                         });
                 });
 
@@ -1352,6 +1772,126 @@ namespace smart_housing_aspnet.Migrations
                             Id = 30,
                             Amount = 172.91,
                             TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Amount = 89.209999999999994,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Amount = 72.909999999999997,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Amount = 17.91,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Amount = 79.120000000000005,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Amount = 68.569999999999993,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Amount = 78.120000000000005,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Amount = 56.909999999999997,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Amount = 88.609999999999999,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Amount = 78.510000000000005,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Amount = 87.209999999999994,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Amount = 83.209999999999994,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Amount = 14.23,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Amount = 98.209999999999994,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Amount = 101.31999999999999,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Amount = 78.319999999999993,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Amount = 80.560000000000002,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Amount = 69.120000000000005,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Amount = 71.450000000000003,
+                            TarriffId = 2
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Amount = 84.909999999999997,
+                            TarriffId = 1
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Amount = 71.670000000000002,
+                            TarriffId = 2
                         });
                 });
 
@@ -1394,14 +1934,14 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "06fa6ac3-9c28-4a25-b139-90b516a08d9b",
+                            ConcurrencyStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
                             Name = "User",
                             NormalizedName = "user"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "06fa6ac3-9c28-4a25-b139-90b516a08d9b",
+                            ConcurrencyStamp = "d3d84202-ab29-48cf-b7e9-db1cd1d5e1fd",
                             Name = "Admin",
                             NormalizedName = "admin"
                         });
