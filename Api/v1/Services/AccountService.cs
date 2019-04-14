@@ -137,14 +137,6 @@ namespace SmartHousing.API.v1.Services
         {
           return new ApiLoginResponse(false, "Invalid password");
         }
-        else if (isLockedOut)
-        {
-          return new ApiLoginResponse(false, "User locked out until " + dalUser.LockoutEnd);
-        }
-        else if (!isConfirmed)
-        {
-          return new ApiLoginResponse(false, "Email not confirmed");
-        }
         else
         {
           return new ApiLoginResponse(true, null);

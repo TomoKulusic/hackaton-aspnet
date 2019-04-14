@@ -13,7 +13,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
 
 
-using Proteron.HumanitarianAid.DAL;
 
 using AutoMapper;
 using SmartHousing.API.Database.Context;

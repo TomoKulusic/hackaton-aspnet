@@ -58,6 +58,8 @@ namespace SmartHousing
 
       services.AddScoped<IWaterService, WaterService>();
       services.AddScoped<IElectricityService, ElectricityService>();
+      services.AddScoped<IAccountService, AccountService>();
+
       services.AddScoped<IUtilitesService, UtilitesService>();
       services.AddTransient<AmountCalculator>();
 
