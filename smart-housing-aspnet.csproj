@@ -11,8 +11,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
-
-
+    <PackageReference Include="IronPdf" Version="5.2.0.1" />
+    <PackageReference Include="Handlebars.Net" Version="1.10.1" />
   </ItemGroup>
 
 </Project>

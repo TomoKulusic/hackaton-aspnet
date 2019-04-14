@@ -193,7 +193,7 @@ namespace SmartHousing.API.Database.Seed
 
     public static List<Utility> Utilities = new List<Utility>
     {
-      new Utility { Id = 1, WaterId = null,  ElectricityId = 1, SmartHouseCityRegion = SmartHouseCityRegion.Centar, Date = new DateTime(2019, 4, 13), Amount = 53.21, UtilityType = UtilityType.Electricity },
+      new Utility { Id = 1, WaterId = null,  ElectricityId = 1, SmartHouseCityRegion = SmartHouseCityRegion.Centar, Date = new DateTime(2019, 4, 13), Amount = 1, UtilityType = UtilityType.Electricity },
       new Utility { Id = 2, WaterId = null,  ElectricityId = 2, SmartHouseCityRegion = SmartHouseCityRegion.Centar, Date = new DateTime(2019, 4, 12), Amount = 43.21, UtilityType = UtilityType.Electricity },
       new Utility { Id = 3, WaterId = null,  ElectricityId = 3, SmartHouseCityRegion = SmartHouseCityRegion.Centar, Date = new DateTime(2019, 4, 11), Amount = 65.11, UtilityType = UtilityType.Electricity },
       new Utility { Id = 4, WaterId = null,  ElectricityId = 4, SmartHouseCityRegion = SmartHouseCityRegion.Batala, Date = new DateTime(2019, 4, 10), Amount = 112.21, UtilityType = UtilityType.Electricity },
