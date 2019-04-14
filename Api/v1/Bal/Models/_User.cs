@@ -8,6 +8,10 @@ namespace SmartHousing.API.Bal.Models
   {
     [NotMapped]
     public string Password { get; set; }
+    public string Name { get; set; }
+    public string LastName { get; set; }
+
+
 
   }
 }
