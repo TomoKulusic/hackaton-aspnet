@@ -32,6 +32,8 @@ namespace SmartHousing.API.v1.Services
     IActionResult GenerateWaterUtility(Water water);
     IActionResult GenerateElectricityUtility(Electricity electricity);
 
+    IActionResult GetWaterByMonth(int month);
+    IActionResult GetElectricityByMonth(int month);
 
   }
 
@@ -105,7 +107,8 @@ namespace SmartHousing.API.v1.Services
             WaterId = water.Id,
             Date = DateTime.Now,
             Amount = this._amountCalculator.getWaterTariff(water.TarriffId, water.Amount),
-            UtilityType = UtilityType.Water
+            UtilityType = UtilityType.Water,
+            SmartHouseCityRegion = SmartHouseCityRegion.Lapad
           };
           this._context.Utilities.Add(utility);
           this._context.SaveChanges();
@@ -122,8 +125,17 @@ namespace SmartHousing.API.v1.Services
         trasnaction.Commit();
         return new OkObjectResult(utilities);
       }
+    }
 
+    public IActionResult GetElectricityByMonth(int month)
+    {
+      var utilities = this._context.Utilities
+            .Where(m => m.UtilityType == UtilityType.Electricity && m.Date.Month == month).ToList();
 
+      var mappedApplications = this._mapper.Map<IEnumerable<Utility>>(utilities);
+      var paginatedResponse = new ApiPaginatedResponse<IEnumerable<Utility>>(mappedApplications, utilities.Count());
+
+      return new OkObjectResult(paginatedResponse);
     }
 
     public IActionResult GetElectricityUtilities()
@@ -162,6 +174,17 @@ namespace SmartHousing.API.v1.Services
       return new OkObjectResult(paginatedResponse);
     }
 
+    public IActionResult GetWaterByMonth(int month)
+    {
+      var utilities = this._context.Utilities
+      .Where(m => m.UtilityType == UtilityType.Water && m.Date.Month == month).ToList();
+
+      var mappedApplications = this._mapper.Map<IEnumerable<Utility>>(utilities);
+      var paginatedResponse = new ApiPaginatedResponse<IEnumerable<Utility>>(mappedApplications, utilities.Count());
+
+      return new OkObjectResult(paginatedResponse);
+    }
+
     public IActionResult GetWaterUtilities()
     {
       var currentDate = DateTime.Now;
@@ -173,6 +196,8 @@ namespace SmartHousing.API.v1.Services
 
       return new OkObjectResult(paginatedResponse);
     }
+
+
 
 
   }

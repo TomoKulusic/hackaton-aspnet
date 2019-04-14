@@ -19,7 +19,7 @@ namespace SmartHousing.API.v1.Endpoints.Controllers
         // GET api/values
         [HttpGet("electricityCurrentMonth")]
         public IActionResult GetUtilitiesForCurrentMonthElectricity()
-        {
+        {   
             return this._utilitiesService.GetUtilitiesForCurrentMonthElectricity();
         }
         [HttpGet("getAllElectricity")]
@@ -38,6 +38,18 @@ namespace SmartHousing.API.v1.Endpoints.Controllers
         public IActionResult GetUtilitiesForCurrentMonthWater()
         {
             return this._utilitiesService.GetUtilitiesForCurrentMonthWater();
+        }
+
+        [HttpGet("getWaterByMonth")]
+        public IActionResult GetWaterByMonth([FromForm] int month)
+        {
+            return this._utilitiesService.GetWaterByMonth(month);
+        }
+
+        [HttpGet("getElectricityByMonth")]
+        public IActionResult GetElectricityByMonth([FromForm] int month)
+        {
+            return this._utilitiesService.GetElectricityByMonth(month);
         }
 
         
