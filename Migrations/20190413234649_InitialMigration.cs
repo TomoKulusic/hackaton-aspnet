@@ -299,8 +299,8 @@ namespace smart_housing_aspnet.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Discriminator", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { 1, "d793f948-75b0-4b44-a558-a3fc73538c54", "Role", "User", "user" },
-                    { 2, "d793f948-75b0-4b44-a558-a3fc73538c54", "Role", "Admin", "admin" }
+                    { 1, "cbe9ea19-2521-43ad-b43c-edb1a36fcc33", "Role", "User", "user" },
+                    { 2, "cbe9ea19-2521-43ad-b43c-edb1a36fcc33", "Role", "Admin", "admin" }
                 });
 
             migrationBuilder.InsertData(
@@ -308,12 +308,12 @@ namespace smart_housing_aspnet.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { 5, 0, "2021dd5d-a2fc-47c6-a92b-eeb23583f857", "frano.nola@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAELSV9pDq+4fzPCh/kikgRgonsGb2AJaAK6Jz4PaF1INVw4BCLD/22nJ8I6m8XJgr0Q==", null, false, "d793f948-75b0-4b44-a558-a3fc73538c54", false, "frano.nola" },
-                    { 6, 0, "6a023b8a-4ea4-427f-9de4-ffedbd50558f", "user@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEDuQsdnZDuhRXyvVz6V9XYtN3yHHII0QXv3xBIteq33o2+lPWChLMl+YeA72MbN+og==", null, false, "d793f948-75b0-4b44-a558-a3fc73538c54", false, "user" },
-                    { 4, 0, "c88914ce-fa24-4430-8904-365254d0fa82", "stipe.brzi@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEDCJ8vQG2QrNYlZq7uSvOCGEpz/OBcwnWOgUAscKzNLLdnk3qhnaohizZT/BjuhO9Q==", null, false, "d793f948-75b0-4b44-a558-a3fc73538c54", false, "stipe.brzi" },
-                    { 1, 0, "768c32eb-a62d-4904-adc5-386bae7d2b34", "tomokulusic@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEP8deUPtmew8qs9TwtnyMwHgW/4peERufLRjugH6GTaKgdJeLpgkHdQ9vQwLsY1LWw==", null, false, "d793f948-75b0-4b44-a558-a3fc73538c54", false, "tomokulusic" },
-                    { 2, 0, "87cbe059-1e62-4721-9f47-83f82640124b", "petar.kleskovic@enum.hr", false, false, null, null, null, "AQAAAAEAACcQAAAAELmSLQ37IvA7NqzPNzklUxJMUnabxNXx5h6Ixm79Tqn/lzYwwBWwlPpHdM7jCm2tMQ==", null, false, "d793f948-75b0-4b44-a558-a3fc73538c54", false, "petar.kleskovic" },
-                    { 3, 0, "179a89ad-2a7f-4ba9-a592-81275bbd6a89", "kxl9597@g.rit.edu", false, false, null, null, null, "AQAAAAEAACcQAAAAEO9W+I+hNz1bX0a3xetlYvDfyHqpVvYZCg4wrfeyRxUIT8F6ODko8cETtjKv2HaqTw==", null, false, "d793f948-75b0-4b44-a558-a3fc73538c54", false, "kxl9597" }
+                    { 5, 0, "4aab9671-26c4-4e29-8773-83162165243f", "frano.nola@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEJYJ6XybycoYbNKCK5hU9KOVCxlutALdUIpn5mMgN6WWEsq07lMUNsifJJw97LqWuA==", null, false, "cbe9ea19-2521-43ad-b43c-edb1a36fcc33", false, "frano.nola" },
+                    { 6, 0, "7bde51ea-6af8-4f20-9659-43137601dedf", "user@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAECu71IYebJJX0uo4MeOA8s/Ue/NESx46SguaQxshLxguXWq8NKbcO1uHELoKuwmrZg==", null, false, "cbe9ea19-2521-43ad-b43c-edb1a36fcc33", false, "user" },
+                    { 4, 0, "620a5bef-5bea-4ec4-b712-5a556a9e2641", "stipe.brzi@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAEHzFbhptmBSjPuojwEAFWeJntgcgcEDrONGKBqFHnnO089ulxW5r4Sa6+w19NcuuLA==", null, false, "cbe9ea19-2521-43ad-b43c-edb1a36fcc33", false, "stipe.brzi" },
+                    { 1, 0, "bb5afc3f-e89a-4056-9c6d-ea53e20a1794", "tomokulusic@gmail.com", false, false, null, null, null, "AQAAAAEAACcQAAAAELQAzTvTof1GfPm15vrDqLSyClfr/IAvVuiscwnw8cz3JJGZ2CxiViIHsRWPbxt3Jg==", null, false, "cbe9ea19-2521-43ad-b43c-edb1a36fcc33", false, "tomokulusic" },
+                    { 2, 0, "c1a8aa4a-3fae-4f26-aa63-a1c6fa760719", "petar.kleskovic@enum.hr", false, false, null, null, null, "AQAAAAEAACcQAAAAEC1HMQJqCOenUaRjLbpneo5xU/KOl2r8q1DeLwRl/8PM59y2cehgn5B/wSK4/cNsdA==", null, false, "cbe9ea19-2521-43ad-b43c-edb1a36fcc33", false, "petar.kleskovic" },
+                    { 3, 0, "780743ea-0b66-4f47-afd6-d715a206a25e", "kxl9597@g.rit.edu", false, false, null, null, null, "AQAAAAEAACcQAAAAENlKnQv2oT4eIU4E94T3/3zZX6jD0rAfmo2tDHiGFd5c7KBvwfjQEKLq4ZEDmcbhJw==", null, false, "cbe9ea19-2521-43ad-b43c-edb1a36fcc33", false, "kxl9597" }
                 });
 
             migrationBuilder.InsertData(

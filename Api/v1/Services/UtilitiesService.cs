@@ -51,17 +51,33 @@ namespace SmartHousing.API.v1.Services
     {
       using (var trasnaction = _context.Database.BeginTransaction())
       {
-        var utility = new Utility
+        var currentDate = DateTime.Now;
+        var utilities = this._context.Utilities
+        .Where(m => m.UtilityType == UtilityType.Electricity && (m.Date.Day == currentDate.Day && m.Date.Month == currentDate.Month && m.Date.Year == currentDate.Year)).FirstOrDefault();
+
+        if (utilities == null)
         {
-          ElectricityId = electricity.Id,
-          Date = DateTime.Now,
-          Amount = this._amountCalculator.getElectricityTariff(electricity.TarriffId, electricity.Amount),
-          UtilityType = UtilityType.Electricity
-        };
-        this._context.Utilities.Add(utility);
+          var utility = new Utility
+          {
+            ElectricityId = electricity.Id,
+            Date = DateTime.Now,
+            Amount = this._amountCalculator.getElectricityTariff(electricity.TarriffId, electricity.Amount),
+            UtilityType = UtilityType.Electricity
+          };
+          this._context.Utilities.Add(utility);
+          this._context.SaveChanges();
+          trasnaction.Commit();
+          return new OkObjectResult(utility);
+
+        }
+        else
+        {
+          utilities.Amount += this._amountCalculator.getElectricityTariff(electricity.TarriffId, electricity.Amount);
+          utilities.Date = currentDate;
+        }
         this._context.SaveChanges();
         trasnaction.Commit();
-        return new OkObjectResult(utility);
+        return new OkObjectResult(utilities);
       }
     }
 
@@ -69,18 +85,37 @@ namespace SmartHousing.API.v1.Services
     {
       using (var trasnaction = _context.Database.BeginTransaction())
       {
-        var utility = new Utility
+        var currentDate = DateTime.Now;
+        var utilities = this._context.Utilities
+        .Where(m => m.UtilityType == UtilityType.Water && (m.Date.Day == currentDate.Day && m.Date.Month == currentDate.Month && m.Date.Year == currentDate.Year)).FirstOrDefault();
+
+        if (utilities == null)
         {
-          WaterId = water.Id,
-          Date = DateTime.Now,
-          Amount = this._amountCalculator.getWaterTariff(water.TarriffId, water.Amount),
-          UtilityType = UtilityType.Water
-        };
-        this._context.Utilities.Add(utility);
+
+          var utility = new Utility
+          {
+            WaterId = water.Id,
+            Date = DateTime.Now,
+            Amount = this._amountCalculator.getWaterTariff(water.TarriffId, water.Amount),
+            UtilityType = UtilityType.Water
+          };
+          this._context.Utilities.Add(utility);
+          this._context.SaveChanges();
+          trasnaction.Commit();
+          return new OkObjectResult(utility);
+
+        }
+        else
+        {
+          utilities.Amount += this._amountCalculator.getWaterTariff(water.TarriffId, water.Amount);
+          utilities.Date = currentDate;
+        }
         this._context.SaveChanges();
         trasnaction.Commit();
-        return new OkObjectResult(utility);
+        return new OkObjectResult(utilities);
       }
+
+
     }
 
     public IActionResult GetElectricityUtilities()

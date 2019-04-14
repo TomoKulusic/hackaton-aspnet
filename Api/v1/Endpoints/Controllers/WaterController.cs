@@ -24,12 +24,10 @@ namespace SmartHousing.API.v1.Endpoints.Controllers
 
     // GET api/values
     [HttpPost]
-    [HttpPost]
     public IActionResult Post([FromBody]Water water)
     {
       var newUtility = _waterService.Post(water);
       return this._utilityService.GenerateWaterUtility((API.Bal.Models.Water)newUtility);
     }
-
   }
 }
