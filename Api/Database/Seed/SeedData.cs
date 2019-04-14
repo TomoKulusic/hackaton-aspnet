@@ -9,6 +9,33 @@ namespace SmartHousing.API.Database.Seed
 {
   public static class SeedData
   {
+
+    static SeedData()
+    {
+      SeedData.Utilities.ForEach(utility =>
+      {
+        if (utility.UtilityType == UtilityType.Water)
+        {
+          var sum = SeedData.Water.Where(w => w.Id == utility.WaterId).Sum(wts =>
+          {
+            return wts.Amount * SeedData.WaterTariff.Where(wt => wt.Id == wts.TarriffId).First().Tariff;
+          });
+          utility.Amount = sum;
+        }
+        else
+        {
+          var sum = SeedData.Electricity.Where(e => e.Id == utility.ElectricityId).Sum(ets =>
+        {
+          var tarriff = SeedData.ElectricityTariff.Where(et => et.Id == ets.TarriffId).First();
+          var value = tarriff.OneTarrif;
+          if (value == null) value = tarriff.LowTarrif;
+          if (value == null) value = tarriff.HighTarrif;
+          return ets.Amount * value;
+        });
+          utility.Amount += sum ?? 0;
+        }
+      });
+    }
     private static string randomGuid = Guid.NewGuid().ToString();
     private static PasswordHasher<User> hasher = new PasswordHasher<User>();
 
