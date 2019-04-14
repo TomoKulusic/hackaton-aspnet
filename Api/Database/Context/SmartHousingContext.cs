@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SmartHousing.API.Bal.Models;
 using SmartHousing.API.Database.Seed;
+using SmartHousing.DocumentTemplates.Invoice.Models;
 
 namespace SmartHousing.API.Database.Context
 {
@@ -17,6 +18,7 @@ namespace SmartHousing.API.Database.Context
     public DbSet<Electricity> Electricity { get; set; }
     public DbSet<ElectricityTariff> ElectricityTariff { get; set; }
     public DbSet<WaterTariff> WaterTariff { get; set; }
+    public DbSet<Invoice> Invoice { get; set; }
     public SmartHousingContext(DbContextOptions<SmartHousingContext> options) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder builder)

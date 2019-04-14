@@ -20,6 +20,8 @@ using SmartHousing.API.Bal.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using SmartHousing.Api.v1.Services;
+using SmartHousing.DocumentTemplates;
 
 namespace SmartHousing
 {
@@ -59,7 +61,8 @@ namespace SmartHousing
       services.AddScoped<IWaterService, WaterService>();
       services.AddScoped<IElectricityService, ElectricityService>();
       services.AddScoped<IAccountService, AccountService>();
-
+      services.AddScoped<IPdfService, PdfService>();
+      services.AddScoped<IHtmlRenderService, HtmlRenderService>();
       services.AddScoped<IUtilitesService, UtilitesService>();
       services.AddTransient<AmountCalculator>();
 
@@ -73,13 +76,13 @@ namespace SmartHousing
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     {
-      // if (env.IsDevelopment())
-      // {
-      //   app.UseDeveloperExceptionPage();
-      // }
-      // else
-      // {
-      // }
+      if (env.IsDevelopment())
+      {
+        app.UseDeveloperExceptionPage();
+      }
+      else
+      {
+      }
 
       app.UseCors(config => config
          .AllowAnyHeader()
@@ -87,8 +90,9 @@ namespace SmartHousing
          .AllowAnyOrigin());
 
       app.UseAuthentication();
+      
       app.UseMvc();
-
+    
       // app.UseDefaultFiles();
       // app.UseStaticFiles();
       // app.UseSpa(m => m.Options.DefaultPage = "/index.html");

@@ -25,6 +25,7 @@ using VM = SmartHousing.DocumentTemplates.Invoice.Models;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using IronPdf;
+using SmartHousing.DocumentTemplates.Invoice.Models;
 
 namespace SmartHousing.Api.v1.Services
 {
@@ -58,10 +59,7 @@ namespace SmartHousing.Api.v1.Services
     public MemoryStream GetPdfStream(int invoiceId)
     {
 
-      var dalInvoice = _context.Invoice
-            .Include(m => m.Order)
-            .ThenInclude(m => m.OrderProducts)
-            .FirstOrDefault(m => m.Id == invoiceId);
+      var dalInvoice = _context.Invoice.Where(m => m.Id == 1).FirstOrDefault();
 
       var invoice = _mapper.Map<VM.Invoice>(dalInvoice);
       var doc = GetPdf(invoice);
@@ -70,19 +68,18 @@ namespace SmartHousing.Api.v1.Services
 
     public IActionResult GetInvoicePdf(int invoiceId)
     {
-      var dalInvoice;
 
-      var user = _context.User.Where(m => m.Id = 1).FirstOrDefault();
+      var user = _context.Users.Where(m => m.Id == 1).FirstOrDefault();
 
       var newInvoice = new Invoice {
         Email = user.Email,
-        FirstName = user.FirstName,
+        FirstName = user.Name,
         LastName = user.LastName,
         Currency = "HRK",
         InvoicePlaceDate = DateTime.Now
       };
 
-      var invoice = _mapper.Map<VM.Invoice>(dalInvoice);
+      var invoice = _mapper.Map<VM.Invoice>(newInvoice);
 
       var doc = GetPdf(invoice);
       return new FileContentResult(doc.BinaryData, PdfApplicationType);
