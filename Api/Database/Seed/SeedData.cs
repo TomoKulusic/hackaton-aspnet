@@ -22,12 +22,12 @@ namespace SmartHousing.API.Database.Seed
 
     public static List<User> User = new List<User>()
     {
-      new User { Id = 1, UserName = "tomokulusic", Email = "tomokulusic@gmail.com", PasswordHash = hasher.HashPassword(null, "Svakacast1!"), SecurityStamp = randomGuid },
-      new User { Id = 2, UserName = "petar.kleskovic", Email = "petar.kleskovic@enum.hr", PasswordHash = hasher.HashPassword(null, "Svakacast1!"), SecurityStamp = randomGuid },
-      new User { Id = 3, UserName = "kxl9597", Email = "kxl9597@g.rit.edu", PasswordHash = hasher.HashPassword(null, "Svakacast1!"),  SecurityStamp = randomGuid },
-      new User { Id = 4, UserName = "stipe.brzi", Email = "stipe.brzi@gmail.com", PasswordHash = hasher.HashPassword(null, "Svakacast1!"),  SecurityStamp = randomGuid },
-      new User { Id = 5, UserName = "frano.nola", Email = "frano.nola@gmail.com", PasswordHash = hasher.HashPassword(null, "Svakacast1!"),  SecurityStamp = randomGuid },
-      new User { Id = 6, UserName = "user", Email = "user@gmail.com", PasswordHash = hasher.HashPassword(null, "Svakacast1!"),  SecurityStamp = randomGuid }
+      new User { Id = 1, UserName = "tomokulusic", Name = "Tomislav", LastName = "Kulusic", Email = "tomokulusic@gmail.com", PasswordHash = hasher.HashPassword(null, "Svakacast1!"), SecurityStamp = randomGuid },
+      new User { Id = 2, UserName = "petar.kleskovic", Name = "Petar", LastName = "Kleskovic", Email = "petar.kleskovic@enum.hr", PasswordHash = hasher.HashPassword(null, "Svakacast1!"), SecurityStamp = randomGuid },
+      new User { Id = 3, UserName = "kxl9597", Name = "Klara", LastName = "Lucijanovic", Email = "kxl9597@g.rit.edu", PasswordHash = hasher.HashPassword(null, "Svakacast1!"),  SecurityStamp = randomGuid },
+      new User { Id = 4, UserName = "stipe.brzi", Name = "Stjepan", LastName = "Brzica", Email = "stipe.brzi@gmail.com", PasswordHash = hasher.HashPassword(null, "Svakacast1!"),  SecurityStamp = randomGuid },
+      new User { Id = 5, UserName = "frano.nola", Name = "Frano", LastName = "Nola", Email = "frano.nola@gmail.com", PasswordHash = hasher.HashPassword(null, "Svakacast1!"),  SecurityStamp = randomGuid },
+      new User { Id = 6, UserName = "user", Name = "User", LastName = "User", Email = "user@gmail.com", PasswordHash = hasher.HashPassword(null, "Svakacast1!"),  SecurityStamp = randomGuid }
 
     };
 

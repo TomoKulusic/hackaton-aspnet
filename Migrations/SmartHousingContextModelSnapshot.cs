@@ -155,301 +155,301 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            Amount = 100.20999999999999,
+                            Amount = 8.2100000000000009,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 2,
-                            Amount = 81.209999999999994,
+                            Amount = 8.9100000000000001,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 3,
-                            Amount = 111.56,
+                            Amount = 10.359999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 4,
-                            Amount = 131.50999999999999,
+                            Amount = 9.5099999999999998,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 5,
-                            Amount = 95.909999999999997,
+                            Amount = 9.9100000000000001,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 6,
-                            Amount = 71.209999999999994,
+                            Amount = 7.21,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 7,
-                            Amount = 78.560000000000002,
+                            Amount = 7.5599999999999996,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 8,
-                            Amount = 71.909999999999997,
+                            Amount = 7.9100000000000001,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 9,
-                            Amount = 87.510000000000005,
+                            Amount = 8.5099999999999998,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 10,
-                            Amount = 90.560000000000002,
+                            Amount = 9.5600000000000005,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 11,
-                            Amount = 81.909999999999997,
+                            Amount = 8.9100000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 12,
-                            Amount = 67.909999999999997,
+                            Amount = 6.9100000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 13,
-                            Amount = 89.510000000000005,
+                            Amount = 8.5099999999999998,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 14,
-                            Amount = 86.909999999999997,
+                            Amount = 8.9100000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 15,
-                            Amount = 71.560000000000002,
+                            Amount = 7.5599999999999996,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 16,
-                            Amount = 78.209999999999994,
+                            Amount = 7.21,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 17,
-                            Amount = 89.510000000000005,
+                            Amount = 8.5099999999999998,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 18,
-                            Amount = 34.560000000000002,
+                            Amount = 3.5600000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 19,
-                            Amount = 62.210000000000001,
+                            Amount = 6.21,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 20,
-                            Amount = 69.909999999999997,
+                            Amount = 6.9100000000000001,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 21,
-                            Amount = 67.510000000000005,
+                            Amount = 6.5099999999999998,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 22,
-                            Amount = 81.560000000000002,
+                            Amount = 8.5600000000000005,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 23,
-                            Amount = 51.210000000000001,
+                            Amount = 7.21,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 24,
-                            Amount = 56.210000000000001,
+                            Amount = 6.21,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 25,
-                            Amount = 89.560000000000002,
+                            Amount = 8.5600000000000005,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 26,
-                            Amount = 69.510000000000005,
+                            Amount = 9.5099999999999998,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 27,
-                            Amount = 41.560000000000002,
+                            Amount = 11.56,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 28,
-                            Amount = 81.209999999999994,
+                            Amount = 8.6899999999999995,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 29,
-                            Amount = 71.209999999999994,
+                            Amount = 7.2699999999999996,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 30,
-                            Amount = 78.510000000000005,
+                            Amount = 8.3100000000000005,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 31,
-                            Amount = 46.609999999999999,
+                            Amount = 7.6900000000000004,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 32,
-                            Amount = 69.109999999999999,
+                            Amount = 9.1099999999999994,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 33,
-                            Amount = 54.210000000000001,
+                            Amount = 10.869999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 34,
-                            Amount = 79.609999999999999,
+                            Amount = 7.9100000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 35,
-                            Amount = 91.909999999999997,
+                            Amount = 9.0099999999999998,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 36,
-                            Amount = 99.120000000000005,
+                            Amount = 9.1199999999999992,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 37,
-                            Amount = 101.91,
+                            Amount = 10.06,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 38,
-                            Amount = 60.979999999999997,
+                            Amount = 6.9800000000000004,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 39,
-                            Amount = 71.310000000000002,
+                            Amount = 7.3200000000000003,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 40,
-                            Amount = 75.909999999999997,
+                            Amount = 7.3099999999999996,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 41,
-                            Amount = 68.390000000000001,
+                            Amount = 8.8900000000000006,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 42,
-                            Amount = 91.540000000000006,
+                            Amount = 9.3399999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 43,
-                            Amount = 71.959999999999994,
+                            Amount = 7.96,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 44,
-                            Amount = 72.609999999999999,
+                            Amount = 7.6100000000000003,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 45,
-                            Amount = 81.609999999999999,
+                            Amount = 8.6099999999999994,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 46,
-                            Amount = 76.900000000000006,
+                            Amount = 7.9000000000000004,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 47,
-                            Amount = 28.309999999999999,
+                            Amount = 8.3100000000000005,
                             TarriffId = 3
                         },
                         new
                         {
                             Id = 48,
-                            Amount = 79.370000000000005,
+                            Amount = 9.3699999999999992,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 49,
-                            Amount = 61.280000000000001,
+                            Amount = 10.279999999999999,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 50,
-                            Amount = 39.909999999999997,
+                            Amount = 9.4900000000000002,
                             TarriffId = 3
                         });
                 });
@@ -523,9 +523,13 @@ namespace smart_housing_aspnet.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
+                    b.Property<string>("LastName");
+
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
+
+                    b.Property<string>("Name");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);
@@ -563,13 +567,15 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ae24e7da-49e2-4f97-865d-b8c6d2a20176",
+                            ConcurrencyStamp = "5598d4b3-00b5-4c92-b78e-f97294cf75cc",
                             Email = "tomokulusic@gmail.com",
                             EmailConfirmed = false,
+                            LastName = "Kulusic",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEIdlsAeeWn9SVi+kVchHZgIrakKdRERO6dEp9aTdQTxi5ghV3PZU0yY2tYqPMQDvgg==",
+                            Name = "Tomislav",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHj/UeLVYx8rYkAxpdYRgxO3YT3BOBwzsyaKk4PxneA5tx1Wshlhif+arIJ79JsTqQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "29035129-c3d2-490b-86de-ab21589ad237",
+                            SecurityStamp = "96c90590-2b46-4580-826f-a0dda13be6f4",
                             TwoFactorEnabled = false,
                             UserName = "tomokulusic"
                         },
@@ -577,13 +583,15 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ed6fde35-6f50-4ac8-87c5-615499649abc",
+                            ConcurrencyStamp = "58403128-074c-44d2-8438-7f9d04d5fae9",
                             Email = "petar.kleskovic@enum.hr",
                             EmailConfirmed = false,
+                            LastName = "Kleskovic",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEAq5v2QQfj8IS5ac5WhoSapVT6D6FGuta/1tS75ezb2E8Q9bAvFBTiHsGUWzgbzVYQ==",
+                            Name = "Petar",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAqI7G1pQeQ/2sSunvu+V/8rJkRvyyhUxjYukozlsB3I+XwjxGz7ZWgtpBBxPJcJkA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "29035129-c3d2-490b-86de-ab21589ad237",
+                            SecurityStamp = "96c90590-2b46-4580-826f-a0dda13be6f4",
                             TwoFactorEnabled = false,
                             UserName = "petar.kleskovic"
                         },
@@ -591,13 +599,15 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "11b293fb-99a7-45a1-87b4-7ed17a005332",
+                            ConcurrencyStamp = "85a4f629-3dd5-4520-a503-fab3415d7f05",
                             Email = "kxl9597@g.rit.edu",
                             EmailConfirmed = false,
+                            LastName = "Lucijanovic",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEO5vuulaOWaiVfclemQ/XuowSvEBBjV2dbitBZ75oU364kRwPLRBbpZBZ0KAh4cseA==",
+                            Name = "Klara",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDZLjSj+efHv21VCUrif6qSPXHjP3df3yj8r6OlMF7AQUqX6lw8mr6Ile33wCyOgHg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "29035129-c3d2-490b-86de-ab21589ad237",
+                            SecurityStamp = "96c90590-2b46-4580-826f-a0dda13be6f4",
                             TwoFactorEnabled = false,
                             UserName = "kxl9597"
                         },
@@ -605,13 +615,15 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "acaaff1a-6903-4e29-88de-389fa6e3007e",
+                            ConcurrencyStamp = "b419c457-9580-4503-b595-17819f74c60a",
                             Email = "stipe.brzi@gmail.com",
                             EmailConfirmed = false,
+                            LastName = "Brzica",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEIpBd/GCfh/AhcIYmQvkMRdw6C9tRRgGIIriRGFlC2EJNl55F6MDT5m+8NqUV+23+g==",
+                            Name = "Stjepan",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIZeJ5bbSXsDJqDj+5vZn3e78Vz03FFNR+FDQwA3fCEcP3rHgibXx++LerDgH7AaRQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "29035129-c3d2-490b-86de-ab21589ad237",
+                            SecurityStamp = "96c90590-2b46-4580-826f-a0dda13be6f4",
                             TwoFactorEnabled = false,
                             UserName = "stipe.brzi"
                         },
@@ -619,13 +631,15 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f29a9019-07e2-4429-ac5b-4ec22121563e",
+                            ConcurrencyStamp = "19d5bf5c-cd03-4e47-a470-22073f076b25",
                             Email = "frano.nola@gmail.com",
                             EmailConfirmed = false,
+                            LastName = "Nola",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEMufzOiKeazHOdD2sUP7t88KM3CkAh2QhCvhs16RNuVNGxMc5mmG+Dybrcli6GXQBA==",
+                            Name = "Frano",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMja3Hvpz03jeAUI0QUcHFUxIdtXWq+T30bijfH5a4TUpgZkXd0qRKJ8BzerjOZ9ZQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "29035129-c3d2-490b-86de-ab21589ad237",
+                            SecurityStamp = "96c90590-2b46-4580-826f-a0dda13be6f4",
                             TwoFactorEnabled = false,
                             UserName = "frano.nola"
                         },
@@ -633,13 +647,15 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 6,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ff975a1c-93ab-4ad1-81a3-b9dcfa7309cf",
+                            ConcurrencyStamp = "2543b476-2eb4-4d69-a276-9745ff347018",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
+                            LastName = "User",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAENWmUTL3hPUvNv1ZbsDqQK4cFIe2g9IvQYFBcL+j9AqqXxt3LRncouogLx0S+tLVOA==",
+                            Name = "User",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJMCj6bMd8GhZbS7RNL+43LlOJo0IfY79qRVB6P4fxaXfMT8eAgJ7JYnrpKIcqz+Yw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "29035129-c3d2-490b-86de-ab21589ad237",
+                            SecurityStamp = "96c90590-2b46-4580-826f-a0dda13be6f4",
                             TwoFactorEnabled = false,
                             UserName = "user"
                         });
@@ -1594,301 +1610,301 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            Amount = 100.20999999999999,
+                            Amount = 0.20999999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 2,
-                            Amount = 150.21000000000001,
+                            Amount = 0.22,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 3,
-                            Amount = 111.56,
+                            Amount = 0.35999999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 4,
-                            Amount = 131.50999999999999,
+                            Amount = 0.31,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 5,
-                            Amount = 95.909999999999997,
+                            Amount = 0.23000000000000001,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 6,
-                            Amount = 71.209999999999994,
+                            Amount = 0.26000000000000001,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 7,
-                            Amount = 78.560000000000002,
+                            Amount = 0.16,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 8,
-                            Amount = 222.91,
+                            Amount = 0.20999999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 9,
-                            Amount = 87.510000000000005,
+                            Amount = 0.31,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 10,
-                            Amount = 90.560000000000002,
+                            Amount = 0.16,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 11,
-                            Amount = 111.91,
+                            Amount = 0.11,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 12,
-                            Amount = 135.91,
+                            Amount = 0.91000000000000003,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 13,
-                            Amount = 190.50999999999999,
+                            Amount = 0.13,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 14,
-                            Amount = 221.91,
+                            Amount = 0.31,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 15,
-                            Amount = 115.56,
+                            Amount = 0.26000000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 16,
-                            Amount = 78.209999999999994,
+                            Amount = 0.20999999999999999,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 17,
-                            Amount = 89.510000000000005,
+                            Amount = 0.19,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 18,
-                            Amount = 34.560000000000002,
+                            Amount = 0.20000000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 19,
-                            Amount = 120.20999999999999,
+                            Amount = 0.17000000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 20,
-                            Amount = 123.91,
+                            Amount = 0.27000000000000002,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 21,
-                            Amount = 167.50999999999999,
+                            Amount = 0.23000000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 22,
-                            Amount = 241.56,
+                            Amount = 0.26000000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 23,
-                            Amount = 231.21000000000001,
+                            Amount = 0.20999999999999999,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 24,
-                            Amount = 56.210000000000001,
+                            Amount = 0.27000000000000002,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 25,
-                            Amount = 89.560000000000002,
+                            Amount = 0.16,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 26,
-                            Amount = 69.510000000000005,
+                            Amount = 0.14000000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 27,
-                            Amount = 141.56,
+                            Amount = 0.35999999999999999,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 28,
-                            Amount = 113.20999999999999,
+                            Amount = 0.20999999999999999,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 29,
-                            Amount = 178.21000000000001,
+                            Amount = 0.31,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 30,
-                            Amount = 172.91,
+                            Amount = 0.17999999999999999,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 31,
-                            Amount = 89.209999999999994,
+                            Amount = 0.28000000000000003,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 32,
-                            Amount = 72.909999999999997,
+                            Amount = 0.31,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 33,
-                            Amount = 17.91,
+                            Amount = 0.20999999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 34,
-                            Amount = 79.120000000000005,
+                            Amount = 0.12,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 35,
-                            Amount = 68.569999999999993,
+                            Amount = 0.17000000000000001,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 36,
-                            Amount = 78.120000000000005,
+                            Amount = 0.22,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 37,
-                            Amount = 56.909999999999997,
+                            Amount = 0.14999999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 38,
-                            Amount = 88.609999999999999,
+                            Amount = 0.12,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 39,
-                            Amount = 78.510000000000005,
+                            Amount = 0.28999999999999998,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 40,
-                            Amount = 87.209999999999994,
+                            Amount = 0.20999999999999999,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 41,
-                            Amount = 83.209999999999994,
+                            Amount = 0.22,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 42,
-                            Amount = 14.23,
+                            Amount = 0.23000000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 43,
-                            Amount = 98.209999999999994,
+                            Amount = 0.20999999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 44,
-                            Amount = 101.31999999999999,
+                            Amount = 0.32000000000000001,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 45,
-                            Amount = 78.319999999999993,
+                            Amount = 0.32000000000000001,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 46,
-                            Amount = 80.560000000000002,
+                            Amount = 0.25,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 47,
-                            Amount = 69.120000000000005,
+                            Amount = 0.14999999999999999,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 48,
-                            Amount = 71.450000000000003,
+                            Amount = 0.28000000000000003,
                             TarriffId = 2
                         },
                         new
                         {
                             Id = 49,
-                            Amount = 84.909999999999997,
+                            Amount = 0.23000000000000001,
                             TarriffId = 1
                         },
                         new
                         {
                             Id = 50,
-                            Amount = 71.670000000000002,
+                            Amount = 0.17000000000000001,
                             TarriffId = 2
                         });
                 });
@@ -1932,14 +1948,14 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "29035129-c3d2-490b-86de-ab21589ad237",
+                            ConcurrencyStamp = "96c90590-2b46-4580-826f-a0dda13be6f4",
                             Name = "User",
                             NormalizedName = "user"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "29035129-c3d2-490b-86de-ab21589ad237",
+                            ConcurrencyStamp = "96c90590-2b46-4580-826f-a0dda13be6f4",
                             Name = "Admin",
                             NormalizedName = "admin"
                         });
