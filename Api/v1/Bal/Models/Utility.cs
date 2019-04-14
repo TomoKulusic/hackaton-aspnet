@@ -16,6 +16,6 @@ namespace SmartHousing.API.Bal.Models
     public Double Amount { get; set; }
     public SmartHouseCityRegion SmartHouseCityRegion { get; set; }
     public UtilityType UtilityType { get; set; }
-    // public int User_id { get; set; }
+    public int UserId { get; set; }
   }
 }

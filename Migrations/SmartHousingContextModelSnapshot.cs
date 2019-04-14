@@ -443,13 +443,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6b05eaf4-cc26-4f14-9041-2e67b6f56be0",
+                            ConcurrencyStamp = "9c7cd940-adbc-4499-9875-bab929b45340",
                             Email = "tomokulusic@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEK+jFJ82bhi4VBLw4292WofbLrkbKyLGmZsUEhWyYZa2asM2H8yIeoXwPnD+nKW39g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGEDQi9N9K9gVwcLDoKTnM6a0cbwVO4A6fdUctQrd6wmKNhiRtlw6ysVUyhCKPLOAQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b7d45e16-a33b-4014-b318-5fedfd853983",
+                            SecurityStamp = "3e98ddf9-7428-40e2-893b-80a143738131",
                             TwoFactorEnabled = false,
                             UserName = "tomokulusic"
                         },
@@ -457,13 +457,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d9cfb7d2-ad7e-496e-95d1-9bf97e2f2f3a",
+                            ConcurrencyStamp = "92f90b91-44db-47bd-8ef3-e390f5962e9b",
                             Email = "petar.kleskovic@enum.hr",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEBK7hCmOp3GUiRcIDt8g8YVrbsBX0mnJz4skRH6J3CCBr9WtaRIROldS5RxaWIxPLg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIDzaA9ISfWbQkt2Z9S0G0dr0lAasFCacMM19IUtH8JskkNVUqsJZhC0egrarmMLKw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b7d45e16-a33b-4014-b318-5fedfd853983",
+                            SecurityStamp = "3e98ddf9-7428-40e2-893b-80a143738131",
                             TwoFactorEnabled = false,
                             UserName = "petar.kleskovic"
                         },
@@ -471,13 +471,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b9b9c36d-01d3-4d82-93de-2310c6bca8ab",
+                            ConcurrencyStamp = "bdd29db5-63af-478b-afa7-7ded4ba94206",
                             Email = "kxl9597@g.rit.edu",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEKFx3QGAFSWyJp85Fr+FlhIt39THqlGtcn2i6CxbST/6nDLgrawV1DMj+vAivDyDpg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEH0+hULcWDMO0PRLGA8BHHrJqWh4fEdAVZwQ1AlCF1wWFe7cLBhnR75uuvfyX2zUpw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b7d45e16-a33b-4014-b318-5fedfd853983",
+                            SecurityStamp = "3e98ddf9-7428-40e2-893b-80a143738131",
                             TwoFactorEnabled = false,
                             UserName = "kxl9597"
                         },
@@ -485,13 +485,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "932a9609-a62b-40d3-8899-684b06a151c3",
+                            ConcurrencyStamp = "a57f27f0-20e0-4ec6-85b2-3cd62d157034",
                             Email = "stipe.brzi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEIZ52O35TcVy4iSSbimx9NWzaUl/GXWxu50tAqr1HqU8ynX/ERkz16voP5G5wA8qkg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGvA6vrhCluxUK4bJ5est5dxqwwl2JBkej1VF2HE+lw71DNkgscXD6yKC+G66IOqKw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b7d45e16-a33b-4014-b318-5fedfd853983",
+                            SecurityStamp = "3e98ddf9-7428-40e2-893b-80a143738131",
                             TwoFactorEnabled = false,
                             UserName = "stipe.brzi"
                         },
@@ -499,13 +499,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0b88ce1c-e630-4e63-af70-4754d0828324",
+                            ConcurrencyStamp = "443c4459-2e42-4b44-afc1-ec838eb86f22",
                             Email = "frano.nola@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEGwCO+3Qswm5zm60ssWQDrmT9kzvkZrXwguR02CTBRg/D1DnZLNC+TwnVg/VRQeCvA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKI33p9t0MeFQ8q6IaFIPPuhFbqp3APvSfT2hmYFd9C/v7ghN8LSPWk/X8VM20mpuA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b7d45e16-a33b-4014-b318-5fedfd853983",
+                            SecurityStamp = "3e98ddf9-7428-40e2-893b-80a143738131",
                             TwoFactorEnabled = false,
                             UserName = "frano.nola"
                         },
@@ -513,13 +513,13 @@ namespace smart_housing_aspnet.Migrations
                         {
                             Id = 6,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3529e3f5-2205-4e30-bd21-e57beea9ac32",
+                            ConcurrencyStamp = "105eb7cc-a20c-480f-ba62-5d15754a3d63",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEOe90t2B+846Gf4xeuENZVU+HCG4i7heIeuyFytxcuSQt+lyhNtrSnO0TrRv70M3DA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEOfOI9exw+EJ/TPHDKqOZEdTMQBoNXSVHqZmkk5hxKkSVU1oMVYNnx4e4kIgXhG26A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b7d45e16-a33b-4014-b318-5fedfd853983",
+                            SecurityStamp = "3e98ddf9-7428-40e2-893b-80a143738131",
                             TwoFactorEnabled = false,
                             UserName = "user"
                         });
@@ -1330,14 +1330,14 @@ namespace smart_housing_aspnet.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "b7d45e16-a33b-4014-b318-5fedfd853983",
+                            ConcurrencyStamp = "3e98ddf9-7428-40e2-893b-80a143738131",
                             Name = "User",
                             NormalizedName = "user"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "b7d45e16-a33b-4014-b318-5fedfd853983",
+                            ConcurrencyStamp = "3e98ddf9-7428-40e2-893b-80a143738131",
                             Name = "Admin",
                             NormalizedName = "admin"
                         });

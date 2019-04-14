@@ -17,6 +17,8 @@ using Proteron.HumanitarianAid.DAL;
 using AutoMapper;
 using SmartHousing.API.Database.Context;
 using SmartHousing.API.Bal.Models;
+using APIX = SmartHousing.API.Database.Models;
+using DAL = SmartHousing.API.Bal.Models;
 
 namespace SmartHousing.API.v1.Services
 {
@@ -33,17 +35,23 @@ namespace SmartHousing.API.v1.Services
 
   }
 
-  public class UtilitesService : IUtilitesService
+  public class UtilitesService : Service, IUtilitesService
   {
     private readonly SmartHousingContext _context;
     private readonly IMapper _mapper;
     private readonly AmountCalculator _amountCalculator;
 
 
-    public UtilitesService(SmartHousingContext context, IMapper mapper, AmountCalculator amountCalculator)
+    public UtilitesService(SmartHousingContext context,
+     IMapper mapper,
+      AmountCalculator amountCalculator,
+      RoleManager<DAL.Role> roleManager,
+      UserManager<DAL.User> userManager,
+      IHttpContextAccessor httpContextAccessor) : base(roleManager, userManager, httpContextAccessor)
     {
       this._context = context;
       this._mapper = mapper;
+
       this._amountCalculator = amountCalculator;
     }
 
