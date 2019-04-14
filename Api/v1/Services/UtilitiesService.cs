@@ -72,7 +72,9 @@ namespace SmartHousing.API.v1.Services
             ElectricityId = electricity.Id,
             Date = DateTime.Now,
             Amount = this._amountCalculator.getElectricityTariff(electricity.TarriffId, electricity.Amount),
-            UtilityType = UtilityType.Electricity
+            UtilityType = UtilityType.Electricity,
+            SmartHouseCityRegion = SmartHouseCityRegion.Lapad
+
           };
           this._context.Utilities.Add(utility);
           this._context.SaveChanges();
